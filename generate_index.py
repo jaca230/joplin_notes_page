@@ -182,7 +182,9 @@ html_content += """
 
 # Add presentations to the presentations table
 for creation_date, pdf_file, num_slides in presentations:
-    html_content += f'        <tr><td><a href="{presentations_dir}/{pdf_file}">{pdf_file}</a></td><td>{num_slides}</td><td>{creation_date.strftime("%d %B %Y")}</td></tr>\n'
+    # Remove the timestamp from the displayed link text by slicing off the last 24 characters
+    display_name = pdf_file[:-24] if len(pdf_file) > 23 else pdf_file
+    html_content += f'        <tr><td><a href="{presentations_dir}/{pdf_file}">{display_name}</a></td><td>{num_slides}</td><td>{creation_date.strftime("%d %B %Y")}</td></tr>\n'
 
 # Close the presentations table
 html_content += """
