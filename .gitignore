@@ -1,0 +1,51 @@
+# Ignore the credentials folder
+credentials/
+credentials.json
+
+# Ignore Python bytecode files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore Windows system files
+Thumbs.db
+desktop.ini
+
+# Ignore virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# Ignore IDE and editor config files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Ignore other OS and editor specific files
+*.swp
+*.swo
+
+# Ignore logs and databases
+*.log
+*.sqlite3
+*.db
+
+# Ignore compiled C extensions
+*.so
+
+# Ignore Joplin backup files
+*.jex
+
+# Ignore archive files
+*.tar
+*.gz
+*.zip
+*.rar
