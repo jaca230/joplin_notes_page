@@ -154,7 +154,7 @@ html_content = """
 
 # Add each dated HTML file to the index content as a row in the work logs table
 for file_date, html_file in dated_files:
-    html_content += f'        <tr><td><a href="{work_logs_dir}/{html_file}">{html_file}</a></td><td>{file_date.strftime("%d %B %Y")}</td></tr>\n'
+    html_content += f'        <tr><td><a href="{work_logs_dir}/{html_file}">{html_file}</a></td><td>{file_date.strftime("%Y-%m-%d")}</td></tr>\n'
 
 # Add other files to the work logs table
 if other_files:
@@ -184,7 +184,7 @@ html_content += """
 for creation_date, pdf_file, num_slides in presentations:
     # Remove the timestamp from the displayed link text by slicing off the last 24 characters
     display_name = pdf_file[:-24] if len(pdf_file) > 23 else pdf_file
-    html_content += f'        <tr><td><a href="{presentations_dir}/{pdf_file}">{display_name}</a></td><td>{num_slides}</td><td>{creation_date.strftime("%d %B %Y")}</td></tr>\n'
+    html_content += f'        <tr><td><a href="{presentations_dir}/{pdf_file}">{display_name}</a></td><td>{num_slides}</td><td>{creation_date.strftime("%Y-%m-%d")}</td></tr>\n'
 
 # Close the presentations table
 html_content += """
@@ -194,6 +194,9 @@ html_content += """
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdn.datatables.net/plug-ins/1.10.24/sorting/datetime-moment.js"></script>
+
     <script>
         function showTable(tableId) {
             // Hide all tables
@@ -206,16 +209,30 @@ html_content += """
         }
 
         $(document).ready(function() {
+            // Register moment.js as the date format parser
+            $.fn.dataTable.moment('DD MMMM YYYY');  // Set date parsing format
+
+            // Initialize Work Logs DataTable with date sorting
             $('#workLogsDataTable').DataTable({
-                "pageLength": -1 // Show all entries by default
+                "pageLength": -1,  // Show all entries by default
+                "columnDefs": [
+                    { "type": "date", "targets": 1 }  // Ensure second column (date) is treated as a date
+                ]
             });
+
+            // Initialize Presentations DataTable with date sorting
             $('#presentationsDataTable').DataTable({
-                "pageLength": -1 // Show all entries by default
+                "pageLength": -1,  // Show all entries by default
+                "columnDefs": [
+                    { "type": "date", "targets": 2 }  // Ensure third column (date) is treated as a date
+                ]
             });
+
             // Show work logs table by default
             showTable('workLogsTable');
         });
     </script>
+
 </body>
 </html>
 """
