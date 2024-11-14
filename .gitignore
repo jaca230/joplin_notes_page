@@ -1,6 +1,7 @@
 # Ignore the credentials folder
 credentials/
 credentials.json
+token.json
 
 # Ignore Python bytecode files
 __pycache__/
