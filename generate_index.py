@@ -1,12 +1,13 @@
 import os
 import re
 from datetime import datetime
-from PyPDF2 import PdfReader  # Make sure to install PyPDF2 for PDF handling
+from PyPDF2 import PdfReader
 
 # Define the directories
 work_logs_dir = "Work Logs"
 presentations_dir = "Presentations"
 index_file_path = "index.html"
+presentations_file_path = "presentations.html"
 
 # Regular expression to match date in the format dd_mm_yyyy
 date_pattern = re.compile(r"(\d{2}_\d{2}_\d{4})")
@@ -20,7 +21,6 @@ def parse_date_from_filename(filename):
 
 # Function to parse date from the last part of the PDF filename
 def parse_date_from_pdf_filename(pdf_filename):
-    # Get the last 24 characters (the date time string)
     date_time_str = pdf_filename[-23:-4]  # Extract 'yyyy-mm-dd-hh-mm-ss'
     try:
         return datetime.strptime(date_time_str, "%Y-%m-%d_%H-%M-%S")
@@ -60,10 +60,8 @@ presentations = []
 
 # Process PDF files to get creation dates and slide counts
 for pdf_file in presentation_files:
-    creation_date = parse_date_from_pdf_filename(pdf_file)  # Use the new date parsing method for PDFs
+    creation_date = parse_date_from_pdf_filename(pdf_file)
     num_slides = get_number_of_slides(os.path.join(presentations_dir, pdf_file))
-    
-    # Print statements to track PDF processing
     if creation_date:
         presentations.append((creation_date, pdf_file, num_slides))
     else:
@@ -72,14 +70,14 @@ for pdf_file in presentation_files:
 # Sort presentations by date (newest first)
 presentations.sort(key=lambda x: x[0], reverse=True)
 
-# Start creating the content for the index file
-html_content = """
+# Generate Work Logs index.html
+html_content_work_logs = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jack Carlton's Notes and Presentations</title>
+    <title>Jack Carlton's Work Logs</title>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
     <style>
         body {
@@ -87,14 +85,11 @@ html_content = """
             background-color: #f8f9fa;
             color: #343a40;
             margin: 20px;
-            line-height: 1.6;
         }
         .navbar {
             overflow: hidden;
             background-color: #007bff;
             padding: 8px 20px;
-            position: relative; /* Removed fixed position to make it non-scrolling */
-            z-index: 10; /* Ensure the navbar is above other content */
         }
         .navbar a {
             float: left;
@@ -102,7 +97,6 @@ html_content = """
             text-align: center;
             padding: 12px 16px;
             text-decoration: none;
-            transition: background-color 0.3s;
         }
         .navbar a:hover {
             background-color: #0056b3;
@@ -116,129 +110,146 @@ html_content = """
             padding: 10px;
             text-align: left;
             border: 1px solid #dee2e6;
-            border-radius: 4px;
         }
         th {
             background-color: #007bff;
             color: white;
         }
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Work Logs</a>
+        <a href="presentations.html">Presentations</a>
+    </div>
+
+    <h2>Work Logs</h2>
+    <table id="workLogsDataTable">
+        <thead>
+            <tr>
+                <th>File Name</th>
+                <th>Creation Date</th>
+            </tr>
+        </thead>
+        <tbody>
+"""
+
+for file_date, html_file in dated_files:
+    html_content_work_logs += f'            <tr><td><a href="{work_logs_dir}/{html_file}">{html_file}</a></td><td>{file_date.strftime("%Y-%m-%d")}</td></tr>\n'
+
+if other_files:
+    for html_file in other_files:
+        html_content_work_logs += f'            <tr><td><a href="{work_logs_dir}/{html_file}">{html_file}</a></td><td>Unknown</td></tr>\n'
+
+html_content_work_logs += """
+        </tbody>
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#workLogsDataTable').DataTable({
+                "order": [[1, "desc"]]  // Default sort by newest date
+            });
+        });
+    </script>
+</body>
+</html>
+"""
+
+with open(index_file_path, "w") as index_file:
+    index_file.write(html_content_work_logs)
+
+# Generate Presentations presentations.html
+html_content_presentations = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack Carlton's Presentations</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+            margin: 20px;
         }
-        a {
+        .navbar {
+            overflow: hidden;
+            background-color: #007bff;
+            padding: 8px 20px;
+        }
+        .navbar a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 12px 16px;
             text-decoration: none;
-            color: #007bff;
         }
-        a:hover {
-            text-decoration: underline;
+        .navbar a:hover {
+            background-color: #0056b3;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #dee2e6;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
         }
     </style>
 </head>
 <body>
     <div class="navbar">
-        <a href="javascript:void(0)" onclick="showTable('workLogsTable')">Work Logs</a>
-        <a href="javascript:void(0)" onclick="showTable('presentationsTable')">Presentations</a>
+        <a href="index.html">Work Logs</a>
+        <a href="presentations.html">Presentations</a>
     </div>
 
-    <div id="workLogsTable" class="table-container">
-        <h2>Work Logs</h2>
-        <table id="workLogsDataTable">
-            <thead>
-                <tr>
-                    <th>File Name</th>
-                    <th>Creation Date</th>
-                </tr>
-            </thead>
-            <tbody>
+    <h2>Presentations</h2>
+    <table id="presentationsDataTable">
+        <thead>
+            <tr>
+                <th>File Name</th>
+                <th>Slides</th>
+                <th>Creation Date</th>
+            </tr>
+        </thead>
+        <tbody>
 """
 
-# Add each dated HTML file to the index content as a row in the work logs table
-for file_date, html_file in dated_files:
-    html_content += f'        <tr><td><a href="{work_logs_dir}/{html_file}">{html_file}</a></td><td>{file_date.strftime("%Y-%m-%d")}</td></tr>\n'
-
-# Add other files to the work logs table
-if other_files:
-    for html_file in other_files:
-        html_content += f'        <tr><td><a href="{work_logs_dir}/{html_file}">{html_file}</a></td></tr>\n'
-
-# Close the work logs table
-html_content += """
-            </tbody>
-        </table>
-    </div>
-
-    <div id="presentationsTable" class="table-container" style="display:none;">
-        <h2>Presentations</h2>
-        <table id="presentationsDataTable">
-            <thead>
-                <tr>
-                    <th>File Name</th>
-                    <th>Slides</th>
-                    <th>Creation Date</th>
-                </tr>
-            </thead>
-            <tbody>
-"""
-
-# Add presentations to the presentations table
 for creation_date, pdf_file, num_slides in presentations:
-    # Remove the timestamp from the displayed link text by slicing off the last 24 characters
     display_name = pdf_file[:-24] if len(pdf_file) > 23 else pdf_file
-    html_content += f'        <tr><td><a href="{presentations_dir}/{pdf_file}">{display_name}</a></td><td>{num_slides}</td><td>{creation_date.strftime("%Y-%m-%d")}</td></tr>\n'
+    html_content_presentations += f'            <tr><td><a href="{presentations_dir}/{pdf_file}">{display_name}</a></td><td>{num_slides}</td><td>{creation_date.strftime("%Y-%m-%d")}</td></tr>\n'
 
-# Close the presentations table
-html_content += """
-            </tbody>
-        </table>
-    </div>
+html_content_presentations += """
+        </tbody>
+    </table>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-    <script src="https://cdn.datatables.net/plug-ins/1.10.24/sorting/datetime-moment.js"></script>
-
     <script>
-        function showTable(tableId) {
-            // Hide all tables
-            const tables = document.getElementsByClassName('table-container');
-            for (let table of tables) {
-                table.style.display = 'none';
-            }
-            // Show the selected table
-            document.getElementById(tableId).style.display = 'block';
-        }
-
         $(document).ready(function() {
-            // Register moment.js as the date format parser
-            $.fn.dataTable.moment('DD MMMM YYYY');  // Set date parsing format
-
-            // Initialize Work Logs DataTable with date sorting
-            $('#workLogsDataTable').DataTable({
-                "pageLength": -1,  // Show all entries by default
-                "columnDefs": [
-                    { "type": "date", "targets": 1 }  // Ensure second column (date) is treated as a date
-                ]
-            });
-
-            // Initialize Presentations DataTable with date sorting
             $('#presentationsDataTable').DataTable({
-                "pageLength": -1,  // Show all entries by default
-                "columnDefs": [
-                    { "type": "date", "targets": 2 }  // Ensure third column (date) is treated as a date
-                ]
+                "order": [[2, "desc"]]  // Default sort by newest date
             });
-
-            // Show work logs table by default
-            showTable('workLogsTable');
         });
     </script>
-
 </body>
 </html>
 """
 
-# Write the content to the index.html file
-with open(index_file_path, "w") as index_file:
-    index_file.write(html_content)
+with open(presentations_file_path, "w") as presentations_file:
+    presentations_file.write(html_content_presentations)
 
-print(f"Index file created at {index_file_path}")
+print("HTML files generated:")
+print(f"- {index_file_path}")
+print(f"- {presentations_file_path}")
