@@ -117,7 +117,11 @@ def main(overwrite):
             flow = InstalledAppFlow.from_client_secrets_file(
                 "credentials.json", SCOPES
             )
-            creds = flow.run_local_server(port=0)
+            creds = flow.run_local_server(
+                port=0,
+                open_browser=not args.noauth_local_webserver,
+                noauth_local_webserver=args.noauth_local_webserver
+            )
             print("Obtained new credentials.")
 
         with open("token.json", "w") as token:
@@ -136,11 +140,19 @@ def main(overwrite):
         
         # Get the ID of the 'Presentations' folder inside 'UKY_Research'
         presentations_id = get_folder_id('Presentations', service)
-        if not presentations_id:
-            return
 
-        # Download all presentations from the 'Presentations' folder
-        download_presentations_in_folder(presentations_id, service, overwrite)
+        # Get the ID of the 'Simulation Progress Reports' folder inside 'UKY_Research'
+        simulation_reports_id = get_folder_id('Simulation Progress Reports', service)
+
+        # Download all presentations from both folders if they exist
+        if presentations_id:
+            print("\nDownloading presentations from 'Presentations' folder...")
+            download_presentations_in_folder(presentations_id, service, overwrite)
+
+        if simulation_reports_id:
+            print("\nDownloading presentations from 'Simulation Progress Reports' folder...")
+            download_presentations_in_folder(simulation_reports_id, service, overwrite)
+
 
     except HttpError as error:
         print(f"An error occurred: {error}")
@@ -148,6 +160,7 @@ def main(overwrite):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Download presentations from Google Drive.')
     parser.add_argument('--overwrite', action='store_true', help='Overwrite existing files.')
+    parser.add_argument('--noauth_local_webserver', action='store_true', help='Use manual authentication instead of a local web server.')
     args = parser.parse_args()
 
     main(args.overwrite)

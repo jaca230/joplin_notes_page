@@ -1,0 +1,894 @@
+
+				<!DOCTYPE html>
+				<html>
+					<head>
+						<meta charset="UTF-8">
+						<meta name="viewport" content="width=device-width, initial-scale=1" />
+						<link rel="stylesheet" href="pluginAssets/jsdraw__markdownIt_editDrawingButton/markdownIt.css"><link rel="stylesheet" href="pluginAssets/highlight.js/atom-one-light.css">
+						<title>16/02/2025 - 22/02/2025</title>
+					</head>
+					<body>
+						<div class="exported-note"><div class="exported-note-title">16/02/2025 - 22/02/2025</div>
+
+<style>
+		/* https://necolas.github.io/normalize.css/ */
+		html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+		article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}
+		pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}
+		b,strong{font-weight:bolder}small{font-size:80%}img{border-style:none}
+
+		body {
+			font-size: 15px;
+			color: #32373F;
+			word-wrap: break-word;
+			line-height: 1.6em;
+			background-color: #ffffff;
+			font-family: 'Avenir Next', 'Avenir', 'Arial', sans-serif;
+			padding-bottom: 0px;
+			padding-top: 0px;
+		}
+		kbd {
+			border: 1px solid rgb(220, 220, 220);
+			box-shadow: inset 0 -1px 0 rgb(220, 220, 220);
+			padding: 2px 4px;
+			border-radius: 3px;
+			background-color: rgb(243, 243, 243);
+		}
+
+		:root {
+			--scrollbar-size: 7px;
+		}
+
+		::-webkit-scrollbar {
+			width: var(--scrollbar-size);
+			height: var(--scrollbar-size);
+		}
+		::-webkit-scrollbar-thumb {
+			border-radius: calc(var(--scrollbar-size) / 2);
+		}
+		::-webkit-scrollbar-corner {
+			background: none;
+		}
+		::-webkit-scrollbar-track {
+			border: none;
+		}
+		::-webkit-scrollbar-thumb {
+			background: rgba(100, 100, 100, 0.3); 
+			border-radius: 5px;
+		}
+		::-webkit-scrollbar-track:hover {
+			background: rgba(0, 0, 0, 0.1); 
+		}
+		::-webkit-scrollbar-thumb:hover {
+			background: rgba(100, 100, 100, 0.7); 
+		}
+
+		
+
+		/* Remove top padding and margin from first child so that top of rendered text is aligned to top of text editor text */
+
+		#rendered-md > h1:first-child,
+		#rendered-md > h2:first-child,
+		#rendered-md > h3:first-child,
+		#rendered-md > h4:first-child,
+		#rendered-md > ul:first-child,
+		#rendered-md > ol:first-child,
+		#rendered-md > table:first-child,
+		#rendered-md > blockquote:first-child,
+		#rendered-md > img:first-child,
+		#rendered-md > p:first-child {
+			margin-top: 0;
+			padding-top: 0;
+		}
+		
+		p, h1, h2, h3, h4, h5, h6, ul, table {
+			margin-top: .6em;
+			margin-bottom: 1.35em;
+
+			/*
+				Adds support for RTL text in the note body. It automatically detects the direction using the content.
+				Issue: https://github.com/laurent22/joplin/issues/3991
+			*/
+			unicode-bidi: plaintext;
+		}
+
+		h1, h2, h3, h4, h5, h6, ul, table {
+			margin-bottom: 0.65em;
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			line-height: 1.5em;
+		}
+		h1 {
+			font-size: 1.5em;
+			font-weight: bold;
+			border-bottom: 1px solid #dddddd;
+			padding-bottom: .3em;
+		}
+		h2 {
+			font-size: 1.3em;
+			font-weight: bold;
+			padding-bottom: .1em; */
+		}
+		h3 {
+			font-size: 1.1em;
+			font-weight: bold;
+		}
+		h4, h5, h6 {
+			font-size: 1em;
+			font-weight: bold;
+		}
+
+		.exported-note-title {
+			font-size: 2em;
+			font-weight: bold;
+			margin-bottom: 0.8em;
+			line-height: 1.5em;
+			padding-bottom: .35em;
+			border-bottom: 1px solid #dddddd;
+		}
+
+		a {
+			color: #155BDA;
+		}
+		ul, ol {
+			padding-left: 0;
+			margin-left: 1.7em;
+		}
+		li {
+			margin-bottom: .4em;
+		}
+		li p {
+			margin-top: 0.2em;
+			margin-bottom: 0;
+		}
+
+		.resource-icon {
+			display: inline-block;
+			position: relative;
+			top: 0.3em;
+			text-decoration: none;
+			width: 1.2em;
+			height: 1.4em;
+			margin-right: 0.4em;
+			background-color:  #155BDA;
+		}
+    /* These icons are obtained from the wonderful ForkAwesome project by copying the src svgs 
+     * into the css classes below.
+     * svgs are obtained from https://github.com/ForkAwesome/Fork-Awesome/tree/master/src/icons/svg
+     * instead of the svg width, height property you must use a viewbox here, 0 0 1536 1792 is typically the actual size of the icon
+     * each line begins with the pre-amble -webkit-mask: url("data:image/svg+xml;utf8,
+     * and of course finishes with ");
+     * to prevent artifacts it is also necessary to include -webkit-mask-repeat: no-repeat;
+     * on the following line
+     * */
+		.fa-joplin {
+			/* Awesome Font file */
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M373.834 128C168.227 128 0 296.223 0 501.834v788.336C0 1495.778 168.227 1664 373.834 1664h788.336c205.608 0 373.83-168.222 373.83-373.83V501.834C1536 296.224 1367.778 128 1162.17 128zm397.222 205.431h417.424a7.132 7.132 0 0 1 7.132 7.133v132.552c0 4.461-3.619 8.073-8.077 8.073h-57.23c-24.168 0-43.768 19.338-44.284 43.374v2.377h-.017v136.191h-.053l-.466 509.375c-5.02 77.667-39.222 149.056-96.324 201.046-60.28 54.834-141.948 85.017-229.962 85.017-12.45 0-25.208-.61-37.907-1.785-92.157-8.682-181.494-48.601-251.662-112.438-71.99-65.517-117.147-150.03-127.164-238-11.226-98.763 23.42-192.783 95.045-257.937 81.99-74.637 198.185-101.768 316.613-75.704 5.574 1.227 9.55 6.282 9.55 11.997v199.52c-.199 2.625-1.481 6.599-8.183 2.896-.663-.365-1.194-.511-1.653-.531-21.987-10.587-45.159-17.57-68.559-19.916-.38-.04-.757-.124-1.138-.163-.537-.048-1.034-.033-1.556-.075-4.13-.354-8.183-.517-12.203-.58-.87-.011-1.771-.127-2.641-.127-.486 0-.951.05-1.437.057-1.464.011-2.886.115-4.33.163-2.76.102-5.497.211-8.182.448-.273.024-.547.07-.835.097-25.509 2.4-47.864 11.104-65.012 25.47-.954.802-1.974 1.53-2.9 2.36a1.34 1.34 0 0 1-.168.146c-23.96 21.8-34.881 53.872-30.726 90.316 4.62 40.737 26.94 81.156 62.841 113.823 35.908 32.67 80.335 52.977 125.113 57.186 35.118 3.36 66.547-3.919 89.899-20.461a97.255 97.255 0 0 0 9.365-7.501c2.925-2.661 5.569-5.5 8.086-8.416.3-.348.672-.673.975-1.024 8.253-9.864 14.222-21.067 17.996-33.148.639-2.034 1.051-4.148 1.564-6.227.381-1.563.81-3.106 1.112-4.693.555-2.784.923-5.632 1.253-8.49.086-.709.183-1.414.237-2.128.492-4.893.693-9.858.55-14.91h.013V521.623c-2.01-22.626-20.78-40.434-43.928-40.434h-57.23a8.071 8.071 0 0 1-8.077-8.073V340.564a7.132 7.132 0 0 1 7.136-7.133z'/></svg>");
+		}
+		.fa-file-image {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-128-448v320H256v-192l192-192 128 128 384-384zm-832-192c-106 0-192-86-192-192s86-192 192-192 192 86 192 192-86 192-192 192z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-pdf {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-514-593c25 20 53 38 84 56 42-5 81-7 117-7 67 0 152 8 177 49 7 10 13 28 2 52-1 1-2 3-3 4v1c-3 18-18 38-71 38-64 0-161-29-245-73-139 15-285 46-392 83-103 176-182 262-242 262-10 0-19-2-28-7l-24-12c-3-1-4-3-6-5-5-5-9-16-6-36 10-46 64-123 188-188 8-5 18-2 23 6 1 1 2 3 2 4 31-51 67-116 107-197 45-90 80-178 104-262-32-109-42-221-24-287 7-25 22-40 42-40h22c15 0 27 5 35 15 12 14 15 36 9 68-1 3-2 6-4 8 1 3 1 5 1 8v30c-1 63-2 123-14 192 35 105 87 190 146 238zm-576 411c30-14 73-57 137-158-75 58-122 124-137 158zm398-920c-10 28-10 76-2 132 3-16 5-31 7-44 2-17 5-31 7-43 1-3 2-5 4-8-1-1-1-3-2-5-1-18-7-29-13-36 0 2-1 3-1 4zm-124 661c88-35 186-63 284-81-10-8-20-15-29-23-49-43-93-103-127-176-19 61-47 126-83 197-15 28-30 56-45 83zm646-16c-5-5-31-24-140-24 49 18 94 28 124 28 9 0 14 0 18-1 0-1-1-2-2-3z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-word {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM233 768v107h70l164 661h159l128-485c5-15 8-30 10-46 1-8 2-16 2-24h4l3 24c3 14 4 30 9 46l128 485h159l164-661h70V768h-300v107h90l-99 438c-4 16-6 33-7 46l-2 21h-4c0-6-2-14-3-21-3-13-5-30-9-46L825 768H711l-144 545c-4 16-5 33-8 46l-4 21h-4l-2-21c-1-13-3-30-7-46l-99-438h90V768H233z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-powerpoint {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-992-234v106h327v-106h-93v-167h137c43 0 82-2 118-15 90-31 146-124 146-233s-54-193-137-228c-38-15-84-19-130-19H416v107h92v555h-92zm353-280H650V882h120c35 0 62 6 83 18 36 21 56 62 56 115 0 56-20 99-62 120-21 10-47 15-78 15z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-excel {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-979-234v106h281v-106h-75l103-161c12-19 18-34 21-34h2c1 4 3 7 5 10 4 8 10 14 17 24l107 161h-76v106h291v-106h-68l-192-273 195-282h67V768H828v107h74l-103 159c-12 19-21 34-21 33h-2c-1-4-3-7-5-10-4-7-9-14-17-23L648 875h76V768H434v107h68l189 272-194 283h-68z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-audio {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM620 850c12 5 20 17 20 30v544c0 13-8 25-20 30-4 1-8 2-12 2-8 0-16-3-23-9l-166-167H288c-18 0-32-14-32-32v-192c0-18 14-32 32-32h131l166-167c10-9 23-12 35-7zm417 689c19 0 37-8 50-24 83-102 129-231 129-363s-46-261-129-363c-22-28-63-32-90-10-28 23-32 63-9 91 65 80 100 178 100 282s-35 202-100 282c-23 28-19 68 9 90 12 10 26 15 40 15zm-211-148c17 0 34-7 47-20 56-60 87-137 87-219s-31-159-87-219c-24-26-65-27-91-3-25 24-27 65-2 91 33 36 52 82 52 131s-19 95-52 131c-25 26-23 67 2 91 13 11 29 17 44 17z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-video {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM768 768c70 0 128 58 128 128v384c0 70-58 128-128 128H384c-70 0-128-58-128-128V896c0-70 58-128 128-128h384zm492 2c12 5 20 17 20 30v576c0 13-8 25-20 30-4 1-8 2-12 2-8 0-17-3-23-9l-265-266v-90l265-266c6-6 15-9 23-9 4 0 8 1 12 2z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-archive {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M640 384V256H512v128h128zm128 128V384H640v128h128zM640 640V512H512v128h128zm128 128V640H640v128h128zm700-388c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H768v128H640V128H128v1536h1280zM781 943c85 287 107 349 107 349 5 17 8 34 8 52 0 111-108 192-256 192s-256-81-256-192c0-18 3-35 8-52 0 0 21-62 120-396V768h128v128h79c29 0 54 19 62 47zm-141 465c71 0 128-29 128-64s-57-64-128-64-128 29-128 64 57 64 128 64z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-code {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM480 768c11-14 31-17 45-6l51 38c14 11 17 31 6 45l-182 243 182 243c11 14 8 34-6 45l-51 38c-14 11-34 8-45-6l-226-301c-8-11-8-27 0-38zm802 301c8 11 8 27 0 38l-226 301c-11 14-31 17-45 6l-51-38c-14-11-17-31-6-45l182-243-182-243c-11-14-8-34 6-45l51-38c14-11 34-8 45 6zm-620 461c-18-3-29-20-26-37l138-831c3-18 20-29 37-26l63 10c18 3 29 20 26 37l-138 831c-3 18-20 29-37 26z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-alt, .fa-file-csv {
+      /* fork-awesome doesn't have csv so we use the text icon */
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM384 800c0-18 14-32 32-32h704c18 0 32 14 32 32v64c0 18-14 32-32 32H416c-18 0-32-14-32-32v-64zm736 224c18 0 32 14 32 32v64c0 18-14 32-32 32H416c-18 0-32-14-32-32v-64c0-18 14-32 32-32h704zm0 256c18 0 32 14 32 32v64c0 18-14 32-32 32H416c-18 0-32-14-32-32v-64c0-18 14-32 32-32h704z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		blockquote {
+			border-left: 4px solid rgb(220, 220, 220);
+			padding-left: 1.2em;
+			margin-left: 0;
+			opacity: 0.7;
+		}
+
+		.jop-tinymce table,
+		table {
+			text-align: left;
+			border-collapse: collapse;
+			border: 1px solid rgb(220, 220, 220);
+			background-color: #ffffff;
+		}
+
+		.jop-tinymce table td, .jop-tinymce table th,
+		table td, th {
+			text-align: left;
+			padding: .5em 1em .5em 1em;
+			font-size: 15;
+			color: #32373F;
+			font-family: 'Avenir Next', 'Avenir', 'Arial', sans-serif;
+		}
+
+		.jop-tinymce table td,
+		table td {
+			border: 1px solid rgb(220, 220, 220);
+		}
+
+		.jop-tinymce table th,
+		table th {
+			border: 1px solid rgb(220, 220, 220);
+			border-bottom: 2px solid rgb(220, 220, 220);
+			background-color: rgb(247, 247, 247);
+		}
+
+		.jop-tinymce table tr:nth-child(even),
+		table tr:nth-child(even) {
+			background-color: rgb(247, 247, 247);
+		}
+
+		.jop-tinymce table tr:hover,
+		table tr:hover {
+			background-color: #e5e5e5;
+		}
+
+		hr {
+			border: none;
+			border-bottom: 2px solid #dddddd;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+		
+		.inline-code,
+		.mce-content-body code {
+			border: 1px solid rgb(220, 220, 220);
+			background-color: rgb(243, 243, 243);
+			padding-right: .2em;
+			padding-left: .2em;
+			border-radius: .25em;
+			color: rgb(0,0,0);
+			font-size: .9em;
+		}
+
+		.highlighted-keyword {
+			background-color: #F3B717;
+			color: black;
+		}
+
+		
+	.not-loaded-resource img {
+		width: 1.15em;
+		height: 1.15em;
+		background: white;
+		padding: 2px !important;
+		border-radius: 2px;
+		box-shadow: 0 1px 3px #000000aa;
+	}
+
+	a.not-loaded-resource img {
+		margin-right: .2em;
+	}
+
+	a.not-loaded-resource {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+
+		.md-checkbox input[type=checkbox]:checked {
+			opacity: 0.7;
+		}
+
+		.jop-tinymce ul.joplin-checklist .checked,
+		.md-checkbox .checkbox-label-checked {
+			opacity: 0.5;
+		}
+
+		.exported-note {
+			padding: 1em;
+		}
+
+		.joplin-editable .joplin-source {
+			display: none;
+		}
+
+		mark {
+			background: #F7D26E;
+			color: black;
+		}
+
+		/* =============================================== */
+		/* For TinyMCE */
+		/* =============================================== */
+
+		.mce-content-body {
+			/* Note: we give a bit more padding at the bottom, to allow scrolling past the end of the document */
+			padding: 5px 10px 10em 0;
+		}
+
+		/*
+		.mce-content-body code {
+			background-color: transparent;
+		}
+		*/
+
+		.mce-content-body [data-mce-selected=inline-boundary] {
+			background-color: transparent;
+		}
+
+		.mce-content-body .joplin-editable {
+			cursor: pointer !important;
+		}
+
+		.mce-content-body.mce-content-readonly {
+			opacity: 0.5;
+		}
+
+		/* We need that to make sure click events have the A has a target */
+		.katex a span {
+			pointer-events: none;
+		}
+
+		.media-player {
+			width: 100%;
+			margin-top: 10px;
+		}
+
+		.media-player.media-pdf {
+			min-height: 35rem;
+			width: 100%;
+			max-width: 1000px;
+			margin: 0;
+			border: 0;
+			display: block;
+		}
+
+		/* Clear the CODE style if the element is within a joplin-editable block */
+		.mce-content-body .joplin-editable code {
+			border: none;
+			background: none;
+			padding: 0;
+			color: inherit;
+			font-size: inherit;
+		}
+
+		/* To make code blocks horizontally scrollable */
+		/* https://github.com/laurent22/joplin/issues/5740 */
+		pre.hljs {
+			overflow-x: auto;
+		}
+
+		.joplin-table-wrapper{
+			overflow-x: auto;
+			overflow-y: hidden;
+		}
+
+		/* =============================================== */
+		/* For TinyMCE */
+		/* =============================================== */
+
+		@media print {
+			body {
+				height: auto !important;
+			}
+
+			pre {
+				white-space: pre-wrap;
+			}
+
+			.code, .inline-code {
+				border: 1px solid #CBCBCB;
+			}
+
+			#joplin-container-content {
+				/* The height of the content is set dynamically by JavaScript (in updateBodyHeight) to go
+				   around various issues related to scrolling. However when printing we don't want this
+				   fixed size as that would crop the content. So we set it to auto here. "important" is
+				   needed to override the style set by JavaScript at the element-level. */
+				height: auto !important;
+			}
+		}
+	
+
+				/*
+					FOR THE MARKDOWN EDITOR
+				*/
+
+				/* Remove the indentation from the checkboxes at the root of the document
+				   (otherwise they are too far right), but keep it for their children to allow
+				   nested lists. Make sure this value matches the UL margin. */
+
+				li.md-checkbox {
+					list-style-type: none;
+				}
+
+				li.md-checkbox input[type=checkbox] {
+					margin-left: -1.71em;
+					margin-right: 0.7em;
+					position: relative;
+					top: 1px;
+				}
+				
+				ul.joplin-checklist {
+					list-style:none;
+				}
+
+				/*
+					FOR THE RICH TEXT EDITOR
+				*/
+
+				ul.joplin-checklist li::before {
+					content:"\f14a";
+					font-family:"Font Awesome 5 Free";
+					background-size: 16px 16px;
+					pointer-events: all;
+					cursor: pointer;
+					width: 1em;
+					height: 1em;
+					margin-left: -1.3em;
+					position: absolute;
+					color: #32373F;
+				}
+
+				.joplin-checklist li:not(.checked)::before {
+					content:"\f0c8";
+				}
+.mermaid { width: 640px; }
+pre.mermaid[data-processed=true] { white-space: unset; }
+.mermaid-export-graph {
+					opacity: 0;
+					height: 0;
+					z-index: 1;
+					position: relative;
+				} 
+				.joplin-editable:hover .mermaid-export-graph,
+				.joplin-editable .mermaid-export-graph:has(:focus-visible) {
+					opacity: 1;
+				}
+				.mermaid-export-graph > button:hover {
+					background-color: #CBDAF1 !important;
+				}</style><div id="rendered-md"><h2 id="17022025-1552">17/02/2025 15:52</h2>
+<p>First draft of a mermaid chart for Nalu Readout System</p>
+<div class="joplin-editable"><pre class="joplin-source" data-joplin-language="" data-joplin-source-open="```&#10;" data-joplin-source-close="&#10;```">graph TD;
+    A[&quot;&lt;b&gt;Nalu MIDAS Frontend&lt;/b&gt;&lt;br&gt; Coordinates MIDAS event construction&quot;]
+    style A fill:#ff4d4d
+
+    subgraph Libraries
+        B[&quot;&lt;b&gt;&lt;a href='https://github.com/jaca230/nalu_board_controller'&gt;Nalu Board Controller&lt;/a&gt;&lt;/b&gt;&lt;br&gt;C++ Wrapper around some naludaq methods for configuring the board and starting readout&quot;]
+        style B fill:#66cc66
+        C[&quot;&lt;b&gt;Nalu Event Collector&lt;/b&gt;&lt;br&gt;C++ API for launching collector threads. Handles receiving data over UDP, processing packets, and collecting into NaluEvents&quot;]
+        style C fill:#cc9900
+        D[&quot;&lt;b&gt;RP Pico W Controller (C++)&lt;/b&gt;&lt;br&gt;C++ API to remotely control the RP Pico over serial or WiFi&quot;]
+        style D fill:#ff4d4d
+    end
+
+    subgraph MicroPython
+        RPBoard[&quot;&lt;b&gt;&lt;a href='https://github.com/jaca230/RP_pico_W_board_interface'&gt;RP Pico W Board Interface&lt;/a&gt;&lt;/b&gt;&lt;br&gt;Handles low-level communication with the RP Pico W board over serial or WiFi.&quot;]
+        style RPBoard fill:#66cc66
+    end
+
+    subgraph Python Packages
+        P3[&quot;&lt;b&gt;&lt;a href='https://github.com/jaca230/RP_pico_W_board_remote_controller'&gt;RP Pico W Controller&lt;/a&gt;&lt;/b&gt;&lt;br&gt;Provides python methods to remotely control RP Pico &quot;]
+        style P3 fill:#66cc66
+        P2[&quot;&lt;b&gt;naludaq&lt;/b&gt;&lt;br&gt;Python interface for Naludaq&quot;]
+    end
+
+    subgraph Classes
+        Z[&quot;&lt;b&gt;PicoBoardManager&lt;/b&gt;&lt;br&gt;Provides methods for remotely controlling RP Pico W&quot;]
+        style Z fill:#ff4d4d
+        X[&quot;&lt;b&gt;NaluBoardManager&lt;/b&gt;&lt;br&gt;Provides methods for configuring board and starting readout&quot;]
+        style X fill:#66cc66
+        Y[&quot;&lt;b&gt;NaluEventCollector&lt;/b&gt;&lt;br&gt;Provides methods for starting collector threads and polling for events&quot;]
+        style Y fill:#cc9900
+        ODB[&quot;&lt;b&gt;ODB Manager&lt;/b&gt;&lt;br&gt;Handles initializing and managing ODB structure for Nalu Equipment&quot;]
+        style ODB fill:#ff4d4d
+        MEC[&quot;&lt;b&gt;Midas Event Constructor&lt;/b&gt;&lt;br&gt;Builds Midas Events from NaluEvents&quot;]
+        style MEC fill:#ff4d4d
+    end
+
+    A --&gt;|Uses| B
+    A --&gt;|Uses| C
+    A -.-&gt;|Optional| D
+    B --&gt;|Provides| X
+    C --&gt;|Provides| Y
+    A --&gt; ODB
+    A --&gt; MEC
+
+    %% Connect libraries to the PythonPackages layer
+    B --&gt;|Pybind| P2
+
+    %% Connect RP Pico W Controller to the MicroPython layer
+    D --&gt;|Interfaces with| RPBoard
+    D --&gt;|Pybind| P3
+    D --&gt;|Provides| Z
+
+
+</pre><pre class="hljs"><code>graph TD;
+    A[&quot;&lt;b&gt;Nalu MIDAS Frontend&lt;/b&gt;&lt;br&gt; Coordinates MIDAS event construction&quot;]
+    style A fill:#ff4d4d
+
+    subgraph Libraries
+        B[&quot;&lt;b&gt;&lt;a href='https://github.com/jaca230/nalu_board_controller'&gt;Nalu Board Controller&lt;/a&gt;&lt;/b&gt;&lt;br&gt;C++ Wrapper around some naludaq methods for configuring the board and starting readout&quot;]
+        style B fill:#66cc66
+        C[&quot;&lt;b&gt;Nalu Event Collector&lt;/b&gt;&lt;br&gt;C++ API for launching collector threads. Handles receiving data over UDP, processing packets, and collecting into NaluEvents&quot;]
+        style C fill:#cc9900
+        D[&quot;&lt;b&gt;RP Pico W Controller (C++)&lt;/b&gt;&lt;br&gt;C++ API to remotely control the RP Pico over serial or WiFi&quot;]
+        style D fill:#ff4d4d
+    end
+
+    subgraph MicroPython
+        RPBoard[&quot;&lt;b&gt;&lt;a href='https://github.com/jaca230/RP_pico_W_board_interface'&gt;RP Pico W Board Interface&lt;/a&gt;&lt;/b&gt;&lt;br&gt;Handles low-level communication with the RP Pico W board over serial or WiFi.&quot;]
+        style RPBoard fill:#66cc66
+    end
+
+    subgraph Python Packages
+        P3[&quot;&lt;b&gt;&lt;a href='https://github.com/jaca230/RP_pico_W_board_remote_controller'&gt;RP Pico W Controller&lt;/a&gt;&lt;/b&gt;&lt;br&gt;Provides python methods to remotely control RP Pico &quot;]
+        style P3 fill:#66cc66
+        P2[&quot;&lt;b&gt;naludaq&lt;/b&gt;&lt;br&gt;Python interface for Naludaq&quot;]
+    end
+
+    subgraph Classes
+        Z[&quot;&lt;b&gt;PicoBoardManager&lt;/b&gt;&lt;br&gt;Provides methods for remotely controlling RP Pico W&quot;]
+        style Z fill:#ff4d4d
+        X[&quot;&lt;b&gt;NaluBoardManager&lt;/b&gt;&lt;br&gt;Provides methods for configuring board and starting readout&quot;]
+        style X fill:#66cc66
+        Y[&quot;&lt;b&gt;NaluEventCollector&lt;/b&gt;&lt;br&gt;Provides methods for starting collector threads and polling for events&quot;]
+        style Y fill:#cc9900
+        ODB[&quot;&lt;b&gt;ODB Manager&lt;/b&gt;&lt;br&gt;Handles initializing and managing ODB structure for Nalu Equipment&quot;]
+        style ODB fill:#ff4d4d
+        MEC[&quot;&lt;b&gt;Midas Event Constructor&lt;/b&gt;&lt;br&gt;Builds Midas Events from NaluEvents&quot;]
+        style MEC fill:#ff4d4d
+    end
+
+    A --&gt;|Uses| B
+    A --&gt;|Uses| C
+    A -.-&gt;|Optional| D
+    B --&gt;|Provides| X
+    C --&gt;|Provides| Y
+    A --&gt; ODB
+    A --&gt; MEC
+
+    %% Connect libraries to the PythonPackages layer
+    B --&gt;|Pybind| P2
+
+    %% Connect RP Pico W Controller to the MicroPython layer
+    D --&gt;|Interfaces with| RPBoard
+    D --&gt;|Pybind| P3
+    D --&gt;|Provides| Z
+
+
+</code></pre></div>
+<p><img src="../_resources/dbccfb3371b94ee48cb453fd67d259b0.png" alt="af43f7661524cef8ddd7f53f068d4054.png"></p>
+<hr>
+<h2 id="17022025-1645">17/02/2025 16:45</h2>
+<p>Here's the &quot;simplified version&quot;, i.e. the branch withouth the RP Pico</p>
+<div class="joplin-editable"><pre class="joplin-source" data-joplin-language="" data-joplin-source-open="```&#10;" data-joplin-source-close="&#10;```">graph TD;
+    A[&quot;&lt;b&gt;Nalu MIDAS Frontend&lt;/b&gt;&lt;br&gt; Coordinates MIDAS event construction&quot;]
+    style A fill:#ff4d4d
+
+    subgraph Libraries
+        B[&quot;&lt;b&gt;&lt;a href='https://github.com/jaca230/nalu_board_controller'&gt;Nalu Board Controller&lt;/a&gt;&lt;/b&gt;&lt;br&gt;C++ Wrapper around some naludaq methods for configuring the board and starting readout&quot;]
+        style B fill:#66cc66
+        C[&quot;&lt;b&gt;Nalu Event Collector&lt;/b&gt;&lt;br&gt;C++ API for launching collector threads. Handles receiving data over UDP, processing packets, and collecting into NaluEvents&quot;]
+        style C fill:#cc9900
+    end
+
+    subgraph Python Packages
+        P2[&quot;&lt;b&gt;naludaq&lt;/b&gt;&lt;br&gt;Python interface for Naludaq&quot;]
+    end
+
+    subgraph Classes
+        X[&quot;&lt;b&gt;NaluBoardManager&lt;/b&gt;&lt;br&gt;Provides methods for configuring board and starting readout&quot;]
+        style X fill:#66cc66
+        Y[&quot;&lt;b&gt;NaluEventCollector&lt;/b&gt;&lt;br&gt;Provides methods for starting collector threads and polling for events&quot;]
+        style Y fill:#cc9900
+        ODB[&quot;&lt;b&gt;ODB Manager&lt;/b&gt;&lt;br&gt;Handles initializing and managing ODB structure for Nalu Equipment&quot;]
+        style ODB fill:#ff4d4d
+        MEC[&quot;&lt;b&gt;Midas Event Constructor&lt;/b&gt;&lt;br&gt;Builds Midas Events from NaluEvents&quot;]
+        style MEC fill:#ff4d4d
+    end
+
+    A --&gt;|Uses| B
+    A --&gt;|Uses| C
+    B --&gt;|Provides| X
+    C --&gt;|Provides| Y
+    A --&gt; ODB
+    A --&gt; MEC
+
+    %% Connect libraries to the PythonPackages layer
+    B --&gt;|Pybind| P2
+</pre><pre class="hljs"><code>graph TD;
+    A[&quot;&lt;b&gt;Nalu MIDAS Frontend&lt;/b&gt;&lt;br&gt; Coordinates MIDAS event construction&quot;]
+    style A fill:#ff4d4d
+
+    subgraph Libraries
+        B[&quot;&lt;b&gt;&lt;a href='https://github.com/jaca230/nalu_board_controller'&gt;Nalu Board Controller&lt;/a&gt;&lt;/b&gt;&lt;br&gt;C++ Wrapper around some naludaq methods for configuring the board and starting readout&quot;]
+        style B fill:#66cc66
+        C[&quot;&lt;b&gt;Nalu Event Collector&lt;/b&gt;&lt;br&gt;C++ API for launching collector threads. Handles receiving data over UDP, processing packets, and collecting into NaluEvents&quot;]
+        style C fill:#cc9900
+    end
+
+    subgraph Python Packages
+        P2[&quot;&lt;b&gt;naludaq&lt;/b&gt;&lt;br&gt;Python interface for Naludaq&quot;]
+    end
+
+    subgraph Classes
+        X[&quot;&lt;b&gt;NaluBoardManager&lt;/b&gt;&lt;br&gt;Provides methods for configuring board and starting readout&quot;]
+        style X fill:#66cc66
+        Y[&quot;&lt;b&gt;NaluEventCollector&lt;/b&gt;&lt;br&gt;Provides methods for starting collector threads and polling for events&quot;]
+        style Y fill:#cc9900
+        ODB[&quot;&lt;b&gt;ODB Manager&lt;/b&gt;&lt;br&gt;Handles initializing and managing ODB structure for Nalu Equipment&quot;]
+        style ODB fill:#ff4d4d
+        MEC[&quot;&lt;b&gt;Midas Event Constructor&lt;/b&gt;&lt;br&gt;Builds Midas Events from NaluEvents&quot;]
+        style MEC fill:#ff4d4d
+    end
+
+    A --&gt;|Uses| B
+    A --&gt;|Uses| C
+    B --&gt;|Provides| X
+    C --&gt;|Provides| Y
+    A --&gt; ODB
+    A --&gt; MEC
+
+    %% Connect libraries to the PythonPackages layer
+    B --&gt;|Pybind| P2
+</code></pre></div>
+<p><img src="../_resources/6aed394211674603a333909ecc315f3d.png" alt="a504f1e0e00a308f297f05db3752eeae.png"></p>
+<hr>
+<h2 id="17022025-2011">17/02/2025 20:11</h2>
+<p>Sometimes, duplicate packets happen, which get grouped as their own event:<br>
+For example:</p>
+<div class="joplin-editable"><pre class="joplin-source" data-joplin-language="" data-joplin-source-open="```&#10;" data-joplin-source-close="&#10;```">--- Standard Event Collection ---
+Collected events: 272
+Time taken to collect events (standard mode): 0.00371872 seconds
+Mode packet count: 62 packets per event
+
+Sample Correct Events:
+Event 270 (62 packets): Packet 0 { Ch: 0, Time: 15765671, Logical: 0, Physical: 7, Index: 16679, Samples: [ Samples: [ 1500, 1518, 1519, 1531, 1497, 1516, 1503, 1496, 1514, 1530, 1489, 1514, 1504, 1490, 1494, 1476, 1486, 1516, 1528, 1517, 1488, 1468, 1521, 1516, 1513, 1496, 1540, 1513, 1522, 1517, 1512, 1539 ], Footer: [ 250, 90 ] } Packet 1 { Ch: 0, Time: 15765671, Logical: 0, Physical: 8, Index: 16680, Samples: [ Samples: [ 1528, 1496, 1466, 1516, 1522, 1498, 1486, 1502, 1488, 1504, 1493, 1493, 1512, 1522, 1512, 1516, 1520, 1516, 1505, 1507, 1474, 1507, 1467, 1490, 1464, 1487, 1518, 1534, 1488, 1517, 1568, 1496 ], Footer: [ 250, 90 ] } Packet 2 { Ch: 0, Time: 15765671, Logical: 0, Physical: 9, Index: 16681, Samples: [ Samples: [ 1510, 1480, 1526, 1525, 1484, 1504, 1490, 1506, 1506, 1535, 1544, 1511, 1483, 1507, 1462, 1509, 1518, 1534, 1484, 1490, 1490, 1475, 1496, 1516, 1519, 1540, 1538, 1517, 1502, 1509, 1540, 1566 ], Footer: [ 250, 90 ] } Packet 3 { Ch: 0, Time: 15765671, Logical: 0, Physical: 10, Index:  ... [truncated]
+
+Event 269 (62 packets): Packet 0 { Ch: 0, Time: 15755341, Logical: 0, Physical: 31, Index: 16617, Samples: [ Samples: [ 1514, 1498, 1536, 1567, 1483, 1516, 1500, 1494, 1502, 1510, 1531, 1490, 1487, 1488, 1504, 1516, 1517, 1520, 1543, 1535, 1514, 1536, 1506, 1489, 1516, 1518, 1536, 1498, 1526, 1522, 1513, 1538 ], Footer: [ 250, 90 ] } Packet 1 { Ch: 0, Time: 15755341, Logical: 0, Physical: 32, Index: 16618, Samples: [ Samples: [ 1514, 1486, 1476, 1516, 1497, 1494, 1490, 1486, 1513, 1522, 1475, 1489, 1475, 1541, 1490, 1484, 1530, 1542, 1518, 1490, 1513, 1517, 1500, 1495, 1538, 1513, 1488, 1514, 1502, 1516, 1542, 1538 ], Footer: [ 250, 90 ] } Packet 2 { Ch: 0, Time: 15755341, Logical: 0, Physical: 33, Index: 16619, Samples: [ Samples: [ 1491, 1506, 1488, 1513, 1488, 1514, 1515, 1518, 1499, 1506, 1543, 1512, 1453, 1508, 1496, 1511, 1499, 1490, 1498, 1502, 1486, 1490, 1514, 1514, 1514, 1493, 1508, 1469, 1504, 1516, 1508, 1566 ], Footer: [ 250, 90 ] } Packet 3 { Ch: 0, Time: 15755341, Logical: 0, Physical: 34, Inde ... [truncated]
+
+Event 268 (62 packets): Packet 0 { Ch: 0, Time: 15745011, Logical: 0, Physical: 55, Index: 16555, Samples: [ Samples: [ 1460, 1529, 1490, 1531, 1526, 1527, 1519, 1525, 1510, 1517, 1532, 1516, 1523, 1484, 1504, 1489, 1518, 1488, 1520, 1495, 1491, 1490, 1538, 1532, 1530, 1519, 1525, 1492, 1496, 1517, 1491, 1539 ], Footer: [ 250, 90 ] } Packet 1 { Ch: 0, Time: 15745011, Logical: 0, Physical: 56, Index: 16556, Samples: [ Samples: [ 1525, 1502, 1456, 1516, 1503, 1512, 1494, 1494, 1500, 1488, 1494, 1511, 1500, 1504, 1483, 1486, 1495, 1521, 1508, 1495, 1510, 1508, 1513, 1472, 1490, 1516, 1500, 1512, 1502, 1513, 1518, 1496 ], Footer: [ 250, 90 ] } Packet 2 { Ch: 0, Time: 15745011, Logical: 0, Physical: 57, Index: 16557, Samples: [ Samples: [ 1516, 1506, 1538, 1534, 1484, 1518, 1520, 1486, 1519, 1519, 1527, 1481, 1494, 1512, 1533, 1516, 1532, 1564, 1536, 1513, 1518, 1516, 1514, 1480, 1520, 1514, 1514, 1455, 1484, 1520, 1496, 1520 ], Footer: [ 250, 90 ] } Packet 3 { Ch: 0, Time: 15745011, Logical: 0, Physical: 58, Inde ... [truncated]
+
+
+Sample Incorrect Events:
+Event 271 (1 packets): Packet 0 { Ch: 0, Time: 15776001, Logical: 0, Physical: 45, Index: 16741, Samples: [ Samples: [ 1543, 1515, 1496, 1526, 1530, 1522, 1512, 1520, 1524, 1525, 1506, 1516, 1497, 1493, 1483, 1488, 1516, 1533, 1519, 1488, 1511, 1487, 1512, 1518, 1516, 1489, 1524, 1467, 1472, 1491, 1480, 1521 ], Footer: [ 250, 90 ] }
+
+Event 135 (1 packets): Packet 0 { Ch: 0, Time: 15776001, Logical: 0, Physical: 45, Index: 8370, Samples: [ Samples: [ 1543, 1515, 1496, 1526, 1530, 1522, 1512, 1520, 1524, 1525, 1506, 1516, 1497, 1493, 1483, 1488, 1516, 1533, 1519, 1488, 1511, 1487, 1512, 1518, 1516, 1489, 1524, 1467, 1472, 1491, 1480, 1521 ], Footer: [ 250, 90 ] }
+
+
+Total Correct Events: 270 (99.2647%)
+Total Incorrect Events: 2 (0.735294%)
+
+--- Lazy Mode Event Collection ---
+Collected events: 272
+Time taken to collect events (lazy mode): 0.00137712 seconds
+Mode packet count: 62 packets per event
+
+Sample Correct Events:
+Event 271 (62 packets): Packet 0 { Ch: 0, Time: 15765671, Logical: 0, Physical: 7, Index: 16679, Samples: [ Samples: [ 1500, 1518, 1519, 1531, 1497, 1516, 1503, 1496, 1514, 1530, 1489, 1514, 1504, 1490, 1494, 1476, 1486, 1516, 1528, 1517, 1488, 1468, 1521, 1516, 1513, 1496, 1540, 1513, 1522, 1517, 1512, 1539 ], Footer: [ 250, 90 ] } Packet 1 { Ch: 0, Time: 15765671, Logical: 0, Physical: 8, Index: 16680, Samples: [ Samples: [ 1528, 1496, 1466, 1516, 1522, 1498, 1486, 1502, 1488, 1504, 1493, 1493, 1512, 1522, 1512, 1516, 1520, 1516, 1505, 1507, 1474, 1507, 1467, 1490, 1464, 1487, 1518, 1534, 1488, 1517, 1568, 1496 ], Footer: [ 250, 90 ] } Packet 2 { Ch: 0, Time: 15765671, Logical: 0, Physical: 9, Index: 16681, Samples: [ Samples: [ 1510, 1480, 1526, 1525, 1484, 1504, 1490, 1506, 1506, 1535, 1544, 1511, 1483, 1507, 1462, 1509, 1518, 1534, 1484, 1490, 1490, 1475, 1496, 1516, 1519, 1540, 1538, 1517, 1502, 1509, 1540, 1566 ], Footer: [ 250, 90 ] } Packet 3 { Ch: 0, Time: 15765671, Logical: 0, Physical: 10, Index:  ... [truncated]
+
+Event 270 (62 packets): Packet 0 { Ch: 0, Time: 15755341, Logical: 0, Physical: 31, Index: 16617, Samples: [ Samples: [ 1514, 1498, 1536, 1567, 1483, 1516, 1500, 1494, 1502, 1510, 1531, 1490, 1487, 1488, 1504, 1516, 1517, 1520, 1543, 1535, 1514, 1536, 1506, 1489, 1516, 1518, 1536, 1498, 1526, 1522, 1513, 1538 ], Footer: [ 250, 90 ] } Packet 1 { Ch: 0, Time: 15755341, Logical: 0, Physical: 32, Index: 16618, Samples: [ Samples: [ 1514, 1486, 1476, 1516, 1497, 1494, 1490, 1486, 1513, 1522, 1475, 1489, 1475, 1541, 1490, 1484, 1530, 1542, 1518, 1490, 1513, 1517, 1500, 1495, 1538, 1513, 1488, 1514, 1502, 1516, 1542, 1538 ], Footer: [ 250, 90 ] } Packet 2 { Ch: 0, Time: 15755341, Logical: 0, Physical: 33, Index: 16619, Samples: [ Samples: [ 1491, 1506, 1488, 1513, 1488, 1514, 1515, 1518, 1499, 1506, 1543, 1512, 1453, 1508, 1496, 1511, 1499, 1490, 1498, 1502, 1486, 1490, 1514, 1514, 1514, 1493, 1508, 1469, 1504, 1516, 1508, 1566 ], Footer: [ 250, 90 ] } Packet 3 { Ch: 0, Time: 15755341, Logical: 0, Physical: 34, Inde ... [truncated]
+
+Event 269 (62 packets): Packet 0 { Ch: 0, Time: 15745011, Logical: 0, Physical: 55, Index: 16555, Samples: [ Samples: [ 1460, 1529, 1490, 1531, 1526, 1527, 1519, 1525, 1510, 1517, 1532, 1516, 1523, 1484, 1504, 1489, 1518, 1488, 1520, 1495, 1491, 1490, 1538, 1532, 1530, 1519, 1525, 1492, 1496, 1517, 1491, 1539 ], Footer: [ 250, 90 ] } Packet 1 { Ch: 0, Time: 15745011, Logical: 0, Physical: 56, Index: 16556, Samples: [ Samples: [ 1525, 1502, 1456, 1516, 1503, 1512, 1494, 1494, 1500, 1488, 1494, 1511, 1500, 1504, 1483, 1486, 1495, 1521, 1508, 1495, 1510, 1508, 1513, 1472, 1490, 1516, 1500, 1512, 1502, 1513, 1518, 1496 ], Footer: [ 250, 90 ] } Packet 2 { Ch: 0, Time: 15745011, Logical: 0, Physical: 57, Index: 16557, Samples: [ Samples: [ 1516, 1506, 1538, 1534, 1484, 1518, 1520, 1486, 1519, 1519, 1527, 1481, 1494, 1512, 1533, 1516, 1532, 1564, 1536, 1513, 1518, 1516, 1514, 1480, 1520, 1514, 1514, 1455, 1484, 1520, 1496, 1520 ], Footer: [ 250, 90 ] } Packet 3 { Ch: 0, Time: 15745011, Logical: 0, Physical: 58, Inde ... [truncated]
+
+
+Sample Incorrect Events:
+Event 272 (1 packets): Packet 0 { Ch: 0, Time: 15776001, Logical: 0, Physical: 45, Index: 16741, Samples: [ Samples: [ 1543, 1515, 1496, 1526, 1530, 1522, 1512, 1520, 1524, 1525, 1506, 1516, 1497, 1493, 1483, 1488, 1516, 1533, 1519, 1488, 1511, 1487, 1512, 1518, 1516, 1489, 1524, 1467, 1472, 1491, 1480, 1521 ], Footer: [ 250, 90 ] }
+
+Event 136 (1 packets): Packet 0 { Ch: 0, Time: 15776001, Logical: 0, Physical: 45, Index: 8370, Samples: [ Samples: [ 1543, 1515, 1496, 1526, 1530, 1522, 1512, 1520, 1524, 1525, 1506, 1516, 1497, 1493, 1483, 1488, 1516, 1533, 1519, 1488, 1511, 1487, 1512, 1518, 1516, 1489, 1524, 1467, 1472, 1491, 1480, 1521 ], Footer: [ 250, 90 ] }
+
+
+Total Correct Events: 270 (99.2647%)
+Total Incorrect Events: 2 (0.735294%)</pre><pre class="hljs"><code>--- Standard Event Collection ---
+Collected events: 272
+Time taken to collect events (standard mode): 0.00371872 seconds
+Mode packet count: 62 packets per event
+
+Sample Correct Events:
+Event 270 (62 packets): Packet 0 { Ch: 0, Time: 15765671, Logical: 0, Physical: 7, Index: 16679, Samples: [ Samples: [ 1500, 1518, 1519, 1531, 1497, 1516, 1503, 1496, 1514, 1530, 1489, 1514, 1504, 1490, 1494, 1476, 1486, 1516, 1528, 1517, 1488, 1468, 1521, 1516, 1513, 1496, 1540, 1513, 1522, 1517, 1512, 1539 ], Footer: [ 250, 90 ] } Packet 1 { Ch: 0, Time: 15765671, Logical: 0, Physical: 8, Index: 16680, Samples: [ Samples: [ 1528, 1496, 1466, 1516, 1522, 1498, 1486, 1502, 1488, 1504, 1493, 1493, 1512, 1522, 1512, 1516, 1520, 1516, 1505, 1507, 1474, 1507, 1467, 1490, 1464, 1487, 1518, 1534, 1488, 1517, 1568, 1496 ], Footer: [ 250, 90 ] } Packet 2 { Ch: 0, Time: 15765671, Logical: 0, Physical: 9, Index: 16681, Samples: [ Samples: [ 1510, 1480, 1526, 1525, 1484, 1504, 1490, 1506, 1506, 1535, 1544, 1511, 1483, 1507, 1462, 1509, 1518, 1534, 1484, 1490, 1490, 1475, 1496, 1516, 1519, 1540, 1538, 1517, 1502, 1509, 1540, 1566 ], Footer: [ 250, 90 ] } Packet 3 { Ch: 0, Time: 15765671, Logical: 0, Physical: 10, Index:  ... [truncated]
+
+Event 269 (62 packets): Packet 0 { Ch: 0, Time: 15755341, Logical: 0, Physical: 31, Index: 16617, Samples: [ Samples: [ 1514, 1498, 1536, 1567, 1483, 1516, 1500, 1494, 1502, 1510, 1531, 1490, 1487, 1488, 1504, 1516, 1517, 1520, 1543, 1535, 1514, 1536, 1506, 1489, 1516, 1518, 1536, 1498, 1526, 1522, 1513, 1538 ], Footer: [ 250, 90 ] } Packet 1 { Ch: 0, Time: 15755341, Logical: 0, Physical: 32, Index: 16618, Samples: [ Samples: [ 1514, 1486, 1476, 1516, 1497, 1494, 1490, 1486, 1513, 1522, 1475, 1489, 1475, 1541, 1490, 1484, 1530, 1542, 1518, 1490, 1513, 1517, 1500, 1495, 1538, 1513, 1488, 1514, 1502, 1516, 1542, 1538 ], Footer: [ 250, 90 ] } Packet 2 { Ch: 0, Time: 15755341, Logical: 0, Physical: 33, Index: 16619, Samples: [ Samples: [ 1491, 1506, 1488, 1513, 1488, 1514, 1515, 1518, 1499, 1506, 1543, 1512, 1453, 1508, 1496, 1511, 1499, 1490, 1498, 1502, 1486, 1490, 1514, 1514, 1514, 1493, 1508, 1469, 1504, 1516, 1508, 1566 ], Footer: [ 250, 90 ] } Packet 3 { Ch: 0, Time: 15755341, Logical: 0, Physical: 34, Inde ... [truncated]
+
+Event 268 (62 packets): Packet 0 { Ch: 0, Time: 15745011, Logical: 0, Physical: 55, Index: 16555, Samples: [ Samples: [ 1460, 1529, 1490, 1531, 1526, 1527, 1519, 1525, 1510, 1517, 1532, 1516, 1523, 1484, 1504, 1489, 1518, 1488, 1520, 1495, 1491, 1490, 1538, 1532, 1530, 1519, 1525, 1492, 1496, 1517, 1491, 1539 ], Footer: [ 250, 90 ] } Packet 1 { Ch: 0, Time: 15745011, Logical: 0, Physical: 56, Index: 16556, Samples: [ Samples: [ 1525, 1502, 1456, 1516, 1503, 1512, 1494, 1494, 1500, 1488, 1494, 1511, 1500, 1504, 1483, 1486, 1495, 1521, 1508, 1495, 1510, 1508, 1513, 1472, 1490, 1516, 1500, 1512, 1502, 1513, 1518, 1496 ], Footer: [ 250, 90 ] } Packet 2 { Ch: 0, Time: 15745011, Logical: 0, Physical: 57, Index: 16557, Samples: [ Samples: [ 1516, 1506, 1538, 1534, 1484, 1518, 1520, 1486, 1519, 1519, 1527, 1481, 1494, 1512, 1533, 1516, 1532, 1564, 1536, 1513, 1518, 1516, 1514, 1480, 1520, 1514, 1514, 1455, 1484, 1520, 1496, 1520 ], Footer: [ 250, 90 ] } Packet 3 { Ch: 0, Time: 15745011, Logical: 0, Physical: 58, Inde ... [truncated]
+
+
+Sample Incorrect Events:
+Event 271 (1 packets): Packet 0 { Ch: 0, Time: 15776001, Logical: 0, Physical: 45, Index: 16741, Samples: [ Samples: [ 1543, 1515, 1496, 1526, 1530, 1522, 1512, 1520, 1524, 1525, 1506, 1516, 1497, 1493, 1483, 1488, 1516, 1533, 1519, 1488, 1511, 1487, 1512, 1518, 1516, 1489, 1524, 1467, 1472, 1491, 1480, 1521 ], Footer: [ 250, 90 ] }
+
+Event 135 (1 packets): Packet 0 { Ch: 0, Time: 15776001, Logical: 0, Physical: 45, Index: 8370, Samples: [ Samples: [ 1543, 1515, 1496, 1526, 1530, 1522, 1512, 1520, 1524, 1525, 1506, 1516, 1497, 1493, 1483, 1488, 1516, 1533, 1519, 1488, 1511, 1487, 1512, 1518, 1516, 1489, 1524, 1467, 1472, 1491, 1480, 1521 ], Footer: [ 250, 90 ] }
+
+
+Total Correct Events: 270 (99.2647%)
+Total Incorrect Events: 2 (0.735294%)
+
+--- Lazy Mode Event Collection ---
+Collected events: 272
+Time taken to collect events (lazy mode): 0.00137712 seconds
+Mode packet count: 62 packets per event
+
+Sample Correct Events:
+Event 271 (62 packets): Packet 0 { Ch: 0, Time: 15765671, Logical: 0, Physical: 7, Index: 16679, Samples: [ Samples: [ 1500, 1518, 1519, 1531, 1497, 1516, 1503, 1496, 1514, 1530, 1489, 1514, 1504, 1490, 1494, 1476, 1486, 1516, 1528, 1517, 1488, 1468, 1521, 1516, 1513, 1496, 1540, 1513, 1522, 1517, 1512, 1539 ], Footer: [ 250, 90 ] } Packet 1 { Ch: 0, Time: 15765671, Logical: 0, Physical: 8, Index: 16680, Samples: [ Samples: [ 1528, 1496, 1466, 1516, 1522, 1498, 1486, 1502, 1488, 1504, 1493, 1493, 1512, 1522, 1512, 1516, 1520, 1516, 1505, 1507, 1474, 1507, 1467, 1490, 1464, 1487, 1518, 1534, 1488, 1517, 1568, 1496 ], Footer: [ 250, 90 ] } Packet 2 { Ch: 0, Time: 15765671, Logical: 0, Physical: 9, Index: 16681, Samples: [ Samples: [ 1510, 1480, 1526, 1525, 1484, 1504, 1490, 1506, 1506, 1535, 1544, 1511, 1483, 1507, 1462, 1509, 1518, 1534, 1484, 1490, 1490, 1475, 1496, 1516, 1519, 1540, 1538, 1517, 1502, 1509, 1540, 1566 ], Footer: [ 250, 90 ] } Packet 3 { Ch: 0, Time: 15765671, Logical: 0, Physical: 10, Index:  ... [truncated]
+
+Event 270 (62 packets): Packet 0 { Ch: 0, Time: 15755341, Logical: 0, Physical: 31, Index: 16617, Samples: [ Samples: [ 1514, 1498, 1536, 1567, 1483, 1516, 1500, 1494, 1502, 1510, 1531, 1490, 1487, 1488, 1504, 1516, 1517, 1520, 1543, 1535, 1514, 1536, 1506, 1489, 1516, 1518, 1536, 1498, 1526, 1522, 1513, 1538 ], Footer: [ 250, 90 ] } Packet 1 { Ch: 0, Time: 15755341, Logical: 0, Physical: 32, Index: 16618, Samples: [ Samples: [ 1514, 1486, 1476, 1516, 1497, 1494, 1490, 1486, 1513, 1522, 1475, 1489, 1475, 1541, 1490, 1484, 1530, 1542, 1518, 1490, 1513, 1517, 1500, 1495, 1538, 1513, 1488, 1514, 1502, 1516, 1542, 1538 ], Footer: [ 250, 90 ] } Packet 2 { Ch: 0, Time: 15755341, Logical: 0, Physical: 33, Index: 16619, Samples: [ Samples: [ 1491, 1506, 1488, 1513, 1488, 1514, 1515, 1518, 1499, 1506, 1543, 1512, 1453, 1508, 1496, 1511, 1499, 1490, 1498, 1502, 1486, 1490, 1514, 1514, 1514, 1493, 1508, 1469, 1504, 1516, 1508, 1566 ], Footer: [ 250, 90 ] } Packet 3 { Ch: 0, Time: 15755341, Logical: 0, Physical: 34, Inde ... [truncated]
+
+Event 269 (62 packets): Packet 0 { Ch: 0, Time: 15745011, Logical: 0, Physical: 55, Index: 16555, Samples: [ Samples: [ 1460, 1529, 1490, 1531, 1526, 1527, 1519, 1525, 1510, 1517, 1532, 1516, 1523, 1484, 1504, 1489, 1518, 1488, 1520, 1495, 1491, 1490, 1538, 1532, 1530, 1519, 1525, 1492, 1496, 1517, 1491, 1539 ], Footer: [ 250, 90 ] } Packet 1 { Ch: 0, Time: 15745011, Logical: 0, Physical: 56, Index: 16556, Samples: [ Samples: [ 1525, 1502, 1456, 1516, 1503, 1512, 1494, 1494, 1500, 1488, 1494, 1511, 1500, 1504, 1483, 1486, 1495, 1521, 1508, 1495, 1510, 1508, 1513, 1472, 1490, 1516, 1500, 1512, 1502, 1513, 1518, 1496 ], Footer: [ 250, 90 ] } Packet 2 { Ch: 0, Time: 15745011, Logical: 0, Physical: 57, Index: 16557, Samples: [ Samples: [ 1516, 1506, 1538, 1534, 1484, 1518, 1520, 1486, 1519, 1519, 1527, 1481, 1494, 1512, 1533, 1516, 1532, 1564, 1536, 1513, 1518, 1516, 1514, 1480, 1520, 1514, 1514, 1455, 1484, 1520, 1496, 1520 ], Footer: [ 250, 90 ] } Packet 3 { Ch: 0, Time: 15745011, Logical: 0, Physical: 58, Inde ... [truncated]
+
+
+Sample Incorrect Events:
+Event 272 (1 packets): Packet 0 { Ch: 0, Time: 15776001, Logical: 0, Physical: 45, Index: 16741, Samples: [ Samples: [ 1543, 1515, 1496, 1526, 1530, 1522, 1512, 1520, 1524, 1525, 1506, 1516, 1497, 1493, 1483, 1488, 1516, 1533, 1519, 1488, 1511, 1487, 1512, 1518, 1516, 1489, 1524, 1467, 1472, 1491, 1480, 1521 ], Footer: [ 250, 90 ] }
+
+Event 136 (1 packets): Packet 0 { Ch: 0, Time: 15776001, Logical: 0, Physical: 45, Index: 8370, Samples: [ Samples: [ 1543, 1515, 1496, 1526, 1530, 1522, 1512, 1520, 1524, 1525, 1506, 1516, 1497, 1493, 1483, 1488, 1516, 1533, 1519, 1488, 1511, 1487, 1512, 1518, 1516, 1489, 1524, 1467, 1472, 1491, 1480, 1521 ], Footer: [ 250, 90 ] }
+
+
+Total Correct Events: 270 (99.2647%)
+Total Incorrect Events: 2 (0.735294%)</code></pre></div>
+<hr>
+<h2 id="17022025-2051">17/02/2025 20:51</h2>
+<p>I'm realizing the timestamp difference between events depends on number of windows and number of channels. This is making me think I left the trigger rate at a saturated value:</p>
+<p>Time diff between 1 channel, 62 windows == ~ 10,000<br>
+Time diff between 1 channel, 1 windows == ~ 1,000<br>
+Time diff between 32 channel, 31 windows == ~40,000<br>
+Time diff between 32 channel, 62 windows == ~ 80,000</p>
+<hr>
+<h2 id="18022025-2031">18/02/2025 20:31</h2>
+<p>I was right, the trigger rate was at ~28kHz. I turned it down to 1kHz, but even this saturates the data rate once there's too many windows or channels:</p>
+<div class="joplin-editable"><pre class="joplin-source" data-joplin-language="" data-joplin-source-open="```&#10;" data-joplin-source-close="&#10;```">Processing file: captured_events_w62_ch1_1kHz.bin
+Sample Positive Time Differences from captured_events_w62_ch1_1kHz.bin: [23843, 23844, 23844, 23842, 23844]
+Sample Negative Time Differences from captured_events_w62_ch1_1kHz.bin: [-1120635, -1144479, -1144479, -1144479]
+========================================
+Processing file: captured_events_w62_ch32_1kHz.bin
+Sample Positive Time Differences from captured_events_w62_ch32_1kHz.bin: [95373, 95374, 95372, 95375, 95372]
+Sample Negative Time Differences from captured_events_w62_ch32_1kHz.bin: []
+========================================
+Processing file: captured_events_w31_ch32_1kHz.bin
+Sample Positive Time Differences from captured_events_w31_ch32_1kHz.bin: [47688, 47686, 47686, 47686, 47688]
+Sample Negative Time Differences from captured_events_w31_ch32_1kHz.bin: []
+========================================
+Processing file: captured_events_w31_ch1_1kHz.bin
+Sample Positive Time Differences from captured_events_w31_ch1_1kHz.bin: [23844, 23843, 23843, 23844, 23842]
+Sample Negative Time Differences from captured_events_w31_ch1_1kHz.bin: [-1192172, -1192172, -1192172, -1192172, -1192172]
+========================================
+Processing file: captured_events_w1_ch32_1kHz.bin
+Sample Positive Time Differences from captured_events_w1_ch32_1kHz.bin: [23843, 23844, 23842, 23845, 23844]
+Sample Negative Time Differences from captured_events_w1_ch32_1kHz.bin: [-1096796, -1096796, -1096796, -1096796, -1096796]
+========================================
+Processing file: captured_events_w1_ch1_1kHz.bin
+Sample Positive Time Differences from captured_events_w1_ch1_1kHz.bin: [23844, 23842, 23844, 23843, 23843]
+Sample Negative Time Differences from captured_events_w1_ch1_1kHz.bin: [-929890, -929890, -929890, -929890, -929890]</pre><pre class="hljs"><code>Processing file: captured_events_w62_ch1_1kHz.bin
+Sample Positive Time Differences from captured_events_w62_ch1_1kHz.bin: [23843, 23844, 23844, 23842, 23844]
+Sample Negative Time Differences from captured_events_w62_ch1_1kHz.bin: [-1120635, -1144479, -1144479, -1144479]
+========================================
+Processing file: captured_events_w62_ch32_1kHz.bin
+Sample Positive Time Differences from captured_events_w62_ch32_1kHz.bin: [95373, 95374, 95372, 95375, 95372]
+Sample Negative Time Differences from captured_events_w62_ch32_1kHz.bin: []
+========================================
+Processing file: captured_events_w31_ch32_1kHz.bin
+Sample Positive Time Differences from captured_events_w31_ch32_1kHz.bin: [47688, 47686, 47686, 47686, 47688]
+Sample Negative Time Differences from captured_events_w31_ch32_1kHz.bin: []
+========================================
+Processing file: captured_events_w31_ch1_1kHz.bin
+Sample Positive Time Differences from captured_events_w31_ch1_1kHz.bin: [23844, 23843, 23843, 23844, 23842]
+Sample Negative Time Differences from captured_events_w31_ch1_1kHz.bin: [-1192172, -1192172, -1192172, -1192172, -1192172]
+========================================
+Processing file: captured_events_w1_ch32_1kHz.bin
+Sample Positive Time Differences from captured_events_w1_ch32_1kHz.bin: [23843, 23844, 23842, 23845, 23844]
+Sample Negative Time Differences from captured_events_w1_ch32_1kHz.bin: [-1096796, -1096796, -1096796, -1096796, -1096796]
+========================================
+Processing file: captured_events_w1_ch1_1kHz.bin
+Sample Positive Time Differences from captured_events_w1_ch1_1kHz.bin: [23844, 23842, 23844, 23843, 23843]
+Sample Negative Time Differences from captured_events_w1_ch1_1kHz.bin: [-929890, -929890, -929890, -929890, -929890]</code></pre></div>
+<hr>
+<h2 id="20022025-2035">20/02/2025 20:35</h2>
+<p>I discovered the origin of the <code class="inline-code">b&quot;\x04\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00&quot;</code> &quot;error code&quot;. It seems to be a UDP packet header. UDP payloads from the board come in 1040 byte chunks, the first 16 bytes are this header. So really they're 1024 byte payloads, which makes more sense.</p>
+<div class="joplin-editable"><pre class="joplin-source" data-joplin-language="" data-joplin-source-open="```&#10;" data-joplin-source-close="&#10;```">captured_events_w62_ch1_1kHz.bin: 1084 occurrences, expected ~1084.00 (size / 1040)
+Occurrences found at: [0, 1040, 2080, 3120, 4160, '...', 1122160, 1123200, 1124240, 1125280, 1126320]
+
+captured_events_w62_ch32_1kHz.bin: 1000 occurrences, expected ~1000.00 (size / 1040)
+Occurrences found at: [0, 1040, 2080, 3120, 4160, '...', 1034800, 1035840, 1036880, 1037920, 1038960]
+
+captured_events_w62_ch32_28kHz.bin: 1000 occurrences, expected ~1000.00 (size / 1040)
+Occurrences found at: [0, 1040, 2080, 3120, 4160, '...', 1034800, 1035840, 1036880, 1037920, 1038960]
+
+captured_events_w62_ch1_28kHz.bin: 1210 occurrences, expected ~1210.00 (size / 1040)
+Occurrences found at: [0, 1040, 2080, 3120, 4160, '...', 1253200, 1254240, 1255280, 1256320, 1257360]
+
+captured_events_w31_ch32_1kHz.bin: 1000 occurrences, expected ~1000.00 (size / 1040)
+Occurrences found at: [0, 1040, 2080, 3120, 4160, '...', 1034800, 1035840, 1036880, 1037920, 1038960]
+
+captured_events_w31_ch32_28kHz.bin: 1000 occurrences, expected ~1000.00 (size / 1040)
+Occurrences found at: [0, 1040, 2080, 3120, 4160, '...', 1034800, 1035840, 1036880, 1037920, 1038960]
+
+captured_events_w31_ch1_1kHz.bin: 1024 occurrences, expected ~1024.00 (size / 1040)
+Occurrences found at: [0, 1040, 2080, 3120, 4160, '...', 1059760, 1060800, 1061840, 1062880, 1063920]
+
+captured_events_w1_ch1_28kHz.bin: 1028 occurrences, expected ~1028.00 (size / 1040)
+Occurrences found at: [0, 1040, 2080, 3120, 4160, '...', 1063920, 1064960, 1066000, 1067040, 1068080]
+
+captured_events_w1_ch32_1kHz.bin: 1080 occurrences, expected ~1080.00 (size / 1040)
+Occurrences found at: [0, 1040, 2080, 3120, 4160, '...', 1118000, 1119040, 1120080, 1121120, 1122160]
+
+captured_events_w1_ch1_1kHz.bin: 0 occurrences, expected ~1002.00 (size / 1040)
+Occurrences found at: []</pre><pre class="hljs"><code>captured_events_w62_ch1_1kHz.bin: 1084 occurrences, expected ~1084.00 (size / 1040)
+Occurrences found at: [0, 1040, 2080, 3120, 4160, '...', 1122160, 1123200, 1124240, 1125280, 1126320]
+
+captured_events_w62_ch32_1kHz.bin: 1000 occurrences, expected ~1000.00 (size / 1040)
+Occurrences found at: [0, 1040, 2080, 3120, 4160, '...', 1034800, 1035840, 1036880, 1037920, 1038960]
+
+captured_events_w62_ch32_28kHz.bin: 1000 occurrences, expected ~1000.00 (size / 1040)
+Occurrences found at: [0, 1040, 2080, 3120, 4160, '...', 1034800, 1035840, 1036880, 1037920, 1038960]
+
+captured_events_w62_ch1_28kHz.bin: 1210 occurrences, expected ~1210.00 (size / 1040)
+Occurrences found at: [0, 1040, 2080, 3120, 4160, '...', 1253200, 1254240, 1255280, 1256320, 1257360]
+
+captured_events_w31_ch32_1kHz.bin: 1000 occurrences, expected ~1000.00 (size / 1040)
+Occurrences found at: [0, 1040, 2080, 3120, 4160, '...', 1034800, 1035840, 1036880, 1037920, 1038960]
+
+captured_events_w31_ch32_28kHz.bin: 1000 occurrences, expected ~1000.00 (size / 1040)
+Occurrences found at: [0, 1040, 2080, 3120, 4160, '...', 1034800, 1035840, 1036880, 1037920, 1038960]
+
+captured_events_w31_ch1_1kHz.bin: 1024 occurrences, expected ~1024.00 (size / 1040)
+Occurrences found at: [0, 1040, 2080, 3120, 4160, '...', 1059760, 1060800, 1061840, 1062880, 1063920]
+
+captured_events_w1_ch1_28kHz.bin: 1028 occurrences, expected ~1028.00 (size / 1040)
+Occurrences found at: [0, 1040, 2080, 3120, 4160, '...', 1063920, 1064960, 1066000, 1067040, 1068080]
+
+captured_events_w1_ch32_1kHz.bin: 1080 occurrences, expected ~1080.00 (size / 1040)
+Occurrences found at: [0, 1040, 2080, 3120, 4160, '...', 1118000, 1119040, 1120080, 1121120, 1122160]
+
+captured_events_w1_ch1_1kHz.bin: 0 occurrences, expected ~1002.00 (size / 1040)
+Occurrences found at: []</code></pre></div>
+<p>For some reason, they don't occur in the &quot;captured_events_w1_ch1_1kHz.bin&quot; case. At first I thought maybe the header has information of how many bytes are in this &quot;event&quot;, but that doesn't make sense.</p>
+<hr>
+<h2 id="20022025-2049">20/02/2025 20:49</h2>
+<p>&quot;captured_events_w1_ch1_1kHz.bin&quot; appears to have more headers. I've highlighted them here:</p>
+<p><strong>01720000 00000000 00000000 00000000</strong> 0e000c27 01fb002f 05a705bd 05d105ef 05d005d2 05d705ad 05b905d8 05d505be 05bd05ae 05b705be 05b205d9 05d005b0 05ea05bb 05d205c5 05d405d6 05d905b3 05bc05a6 05a805d1 fa5a0e00 0c2c0f1f 001505de 05c505c6 05ed05a6 05b505b7 05b805ba 05db05e0 05d105b4 05de05e2 05d405c1 05e205de 05fd05c2 05bc05c4 05d605be 05d605d0 05c605b6 05c705b4 05d3fa5a 0e000c32 0c410037 059e05e8 05c305e8 05e005e6 05de05e0 05d005d8 05e705d4 05dd05b6 05d005ba 05da05ba 05de05cd 05c205be 05ed05e7 05e705da 05e405c4 05c605d5 05c405ee fa5a0e00 0c380965 001d05d4 05e205d8 05e905be 05d005d2 05bc05cb 05ce05c4 05b805b7 05b805c2 05d505b6 05dd05d4 05c005d0 05cc05d8 05eb05e0 05a205c2 05b205d3 05c905cf 0611fa5a 0e000c3e 06880002 05e905cb 05a005bc 05cc05c0 05d605bb 05b805c9 05d005ce 05f005f0 05e005d1 05b805ec 05d305d1 05bd05d2 05c805ed 05d405d2 05d505bf 05d405d2 05ee05fa fa5a<strong>0206 00000000 00000000 00000000 0000</strong>0e00 0c4403ab 002505c4 05b805e6 05d305c7 05d305e4 05e005d2 05dd05e0 05a305d1 05ce05c3 05be05bd 05b605ac 05c505bd 05b405bf 05bc05dc 05d305d3 05b605b8 05b605a2 05ecfa5a 0e000c4a 00ce000a 05e205b2 05d005d0 05d505d0 05d405e1 05ed05bc 05ce05ba 05ee05ea 05a205a0 05ba05da 05de05cb 05b105d2 05a405c2 05bb05d8 05d205d0 05c705d2 05d605d3 fa5a0e00 0c4f0df1 002d05ee 05d405c6 05e205e7 05de05d2 05d905df 05dc05c9 05d405c6 05c005b2 05b805d2 05e705d9 05bc05d2 05b905d2 05d605d6 05bb05e1 05a405ab 05be05b2 05dcfa5a 0e000c55 0b150013 05cd05d0 05d205fb 05b905c0 05b405c6 05b605d9 05d805bc 05b705cf 05dc05cf 05d105bc 05b605c8 05d005d0 05d805dc 05b405d6 05c805a3 05b505ce 05c205f6 fa5a0e00 0c5b083b 003905d5 05d005ec 05ec05b8 05da05dc 05b805d8 05da05df 05b205c1 05d005e5 05d305e5 060605ec 05d205d8 05d605d5 05b405dc 05d505d5 059e05b6 05d805c4 05d9fa5a 0e000c61 055e001e 05ee05bd 05c405e5 05eb05c0 05a205b9 05d005c5 05b805ca 05d305ec 05b805ba 05ce05ed 05ea05e4 05d40602 05c705d4 05d405d3 05d105d0 05cf05c2 05ed05e5 fa5a0e00 0c670281 000305b6 05b605dc 05fe05d7 05df05e6 05bb05cc 05b905ed 05e105d6 05d605d5 05e605b3 05d705d6 05ba05be 05d205d5 05e705d4 05e805b4 05b805d6 05d105d1 0606fa5a <strong>02060000 00000000 00000000 00000000</strong> 0e000c6c 0fa40026 05f105b7 05bf05ca 05cf05e6 05d305c8 05cd05d6 05c105d0 05c405d8 05af05c2 05c505c6 05cf05d3 05d005df 05c705c9 05d005ed 05ec05d6 05d605e5 060005f0 fa5a0e00 0c720cc7 000b05d2 05d205c8 05e505c6 05dc05c4 05ca05c0 05ec05e1</p>
+<p>If you convert <code class="inline-code">0x0206</code> to decimal, you get 518, which is exactly how many bytes are before the next header. Similarly you can do the same for <code class="inline-code">0x0172</code> to 370 in decimal. This makes sense because <code class="inline-code">0x0400</code> is 1024 in hex, which is the largest UDP packet the board will send.</p>
+<hr>
+<div class="joplin-editable"><pre class="joplin-source" data-joplin-language="" data-joplin-source-open="```&#10;" data-joplin-source-close="&#10;```">Sample Incorrect Events:
+Event 22962 (25 packets): Packet 0 { Ch: 0, Time: 843213, Logical: 0, Physical: 3, Index: 1423528, Samples: [ Samples: [ 1472, 1470, 1517, 1544, 1510, 1517, 1520, 1482, 1495, 1483, 1532, 1519, 1511, 1506, 1509, 1522, 1472, 1514, 1513, 1480, 1485, 1495, 1510, 1525, 1506, 1522, 1470, 1478, 1515, 1503, 1493, 1550 ], Footer: [ 250, 90 ] } Packet 1 { Ch: 0, Time: 843213, Logical: 0, Physical: 4, Index: 1423529, Samples: [ Samples: [ 1537, 1480, 1438, 1512, 1519, 1502, 1517, 1510, 1526, 1490, 1486, 1488, 1498, 1480, 1469, 1515, 1488, 1519, 1515, 1508, 1522, 1516, 1493, 1513, 1466, 1511, 1523, 1530, 1492, 1518, 1534, 1525 ], Footer: [ 250, 90 ] } Packet 2 { Ch: 0, Time: 843213, Logical: 0, Physical: 5, Index: 1423530, Samples: [ Samples: [ 1512, 1496, 1458, 1519, 1499, 1496, 1504, 1503, 1456, 1516, 1524, 1514, 1493, 1459, 1513, 1500, 1497, 1501, 1512, 1520, 1515, 1493, 1517, 1501, 1507, 1510, 1493, 1465, 1468, 1489, 1492, 1516 ], Footer: [ 250, 90 ] } Packet 3 { Ch: 0, Time: 843213, Logical: 0, Physical: 6, Index: 142 ... [truncated]
+
+Event 1 (8 packets): Packet 0 { Ch: 0, Time: 6961400, Logical: 0, Physical: 52, Index: 0, Samples: [ Samples: [ 1535, 1470, 1486, 1536, 1528, 1504, 1518, 1498, 1520, 1516, 1516, 1498, 1518, 1516, 1495, 1471, 1514, 1537, 1495, 1470, 1521, 1526, 1488, 1492, 1506, 1519, 1495, 1522, 1489, 1540, 1526, 1528 ], Footer: [ 250, 90 ] } Packet 1 { Ch: 0, Time: 6961400, Logical: 0, Physical: 53, Index: 1, Samples: [ Samples: [ 1496, 1506, 1476, 1540, 1493, 1503, 1463, 1464, 1521, 1528, 1510, 1490, 1496, 1499, 1506, 1469, 1470, 1496, 1512, 1516, 1516, 1500, 1508, 1489, 1492, 1500, 1497, 1493, 1472, 1507, 1519, 1515 ], Footer: [ 250, 90 ] } Packet 2 { Ch: 0, Time: 6961400, Logical: 0, Physical: 54, Index: 2, Samples: [ Samples: [ 1541, 1438, 1470, 1512, 1490, 1506, 1496, 1482, 1502, 1514, 1496, 1516, 1491, 1504, 1476, 1484, 1504, 1521, 1480, 1486, 1478, 1491, 1480, 1492, 1487, 1498, 1500, 1515, 1500, 1513, 1485, 1492 ], Footer: [ 250, 90 ] } Packet 3 { Ch: 0, Time: 6961400, Logical: 0, Physical: 55, Index: 3, Samples: [ ... [truncated]
+
+
+Total Correct Events: 22960 (99.9913%)
+Total Incorrect Events: 2 (0.00871004%)</pre><pre class="hljs"><code>Sample Incorrect Events:
+Event 22962 (25 packets): Packet 0 { Ch: 0, Time: 843213, Logical: 0, Physical: 3, Index: 1423528, Samples: [ Samples: [ 1472, 1470, 1517, 1544, 1510, 1517, 1520, 1482, 1495, 1483, 1532, 1519, 1511, 1506, 1509, 1522, 1472, 1514, 1513, 1480, 1485, 1495, 1510, 1525, 1506, 1522, 1470, 1478, 1515, 1503, 1493, 1550 ], Footer: [ 250, 90 ] } Packet 1 { Ch: 0, Time: 843213, Logical: 0, Physical: 4, Index: 1423529, Samples: [ Samples: [ 1537, 1480, 1438, 1512, 1519, 1502, 1517, 1510, 1526, 1490, 1486, 1488, 1498, 1480, 1469, 1515, 1488, 1519, 1515, 1508, 1522, 1516, 1493, 1513, 1466, 1511, 1523, 1530, 1492, 1518, 1534, 1525 ], Footer: [ 250, 90 ] } Packet 2 { Ch: 0, Time: 843213, Logical: 0, Physical: 5, Index: 1423530, Samples: [ Samples: [ 1512, 1496, 1458, 1519, 1499, 1496, 1504, 1503, 1456, 1516, 1524, 1514, 1493, 1459, 1513, 1500, 1497, 1501, 1512, 1520, 1515, 1493, 1517, 1501, 1507, 1510, 1493, 1465, 1468, 1489, 1492, 1516 ], Footer: [ 250, 90 ] } Packet 3 { Ch: 0, Time: 843213, Logical: 0, Physical: 6, Index: 142 ... [truncated]
+
+Event 1 (8 packets): Packet 0 { Ch: 0, Time: 6961400, Logical: 0, Physical: 52, Index: 0, Samples: [ Samples: [ 1535, 1470, 1486, 1536, 1528, 1504, 1518, 1498, 1520, 1516, 1516, 1498, 1518, 1516, 1495, 1471, 1514, 1537, 1495, 1470, 1521, 1526, 1488, 1492, 1506, 1519, 1495, 1522, 1489, 1540, 1526, 1528 ], Footer: [ 250, 90 ] } Packet 1 { Ch: 0, Time: 6961400, Logical: 0, Physical: 53, Index: 1, Samples: [ Samples: [ 1496, 1506, 1476, 1540, 1493, 1503, 1463, 1464, 1521, 1528, 1510, 1490, 1496, 1499, 1506, 1469, 1470, 1496, 1512, 1516, 1516, 1500, 1508, 1489, 1492, 1500, 1497, 1493, 1472, 1507, 1519, 1515 ], Footer: [ 250, 90 ] } Packet 2 { Ch: 0, Time: 6961400, Logical: 0, Physical: 54, Index: 2, Samples: [ Samples: [ 1541, 1438, 1470, 1512, 1490, 1506, 1496, 1482, 1502, 1514, 1496, 1516, 1491, 1504, 1476, 1484, 1504, 1521, 1480, 1486, 1478, 1491, 1480, 1492, 1487, 1498, 1500, 1515, 1500, 1513, 1485, 1492 ], Footer: [ 250, 90 ] } Packet 3 { Ch: 0, Time: 6961400, Logical: 0, Physical: 55, Index: 3, Samples: [ ... [truncated]
+
+
+Total Correct Events: 22960 (99.9913%)
+Total Incorrect Events: 2 (0.00871004%)</code></pre></div>
+</div></div>
+					</body>
+				</html>
+			
