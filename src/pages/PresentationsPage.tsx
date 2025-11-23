@@ -12,6 +12,7 @@ import {
   formatSlides,
   pluralizeEntries,
   triggerCsvDownload,
+  withBasePath,
 } from "../utils/dataHelpers";
 
 type SortColumn = "title" | "slides" | "createdDate";
@@ -186,7 +187,7 @@ const PresentationsPage = ({ presentations, searchTexts }: PresentationsPageProp
               sorted.map((deck) => (
                 <tr key={deck.fileName} className="hover:bg-slate-50">
                   <td className="px-4 py-3 font-medium text-brand-blue">
-                    <a href={deck.url} target="_blank" rel="noreferrer">
+                    <a href={withBasePath(deck.url)} target="_blank" rel="noreferrer">
                       {deck.title}
                     </a>
                     {normalizedFilter && (
