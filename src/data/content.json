@@ -1,0 +1,632 @@
+{
+  "generatedAt": "2025-11-23T20:52:13.070240Z",
+  "workLogs": [
+    {
+      "fileName": "09_11_2025 - 15_11_2025.html",
+      "title": "09_11_2025 - 15_11_2025.html",
+      "url": "resources/work_logs/09_11_2025 - 15_11_2025.html",
+      "createdDate": "2025-11-09"
+    },
+    {
+      "fileName": "12_10_2025 - 18_10_2025.html",
+      "title": "12_10_2025 - 18_10_2025.html",
+      "url": "resources/work_logs/12_10_2025 - 18_10_2025.html",
+      "createdDate": "2025-10-12"
+    },
+    {
+      "fileName": "28_09_2025 - 04_10_2025.html",
+      "title": "28_09_2025 - 04_10_2025.html",
+      "url": "resources/work_logs/28_09_2025 - 04_10_2025.html",
+      "createdDate": "2025-09-28"
+    },
+    {
+      "fileName": "21_09_2025 - 27_09_2025.html",
+      "title": "21_09_2025 - 27_09_2025.html",
+      "url": "resources/work_logs/21_09_2025 - 27_09_2025.html",
+      "createdDate": "2025-09-21"
+    },
+    {
+      "fileName": "07_09_2025 - 13_09_2025.html",
+      "title": "07_09_2025 - 13_09_2025.html",
+      "url": "resources/work_logs/07_09_2025 - 13_09_2025.html",
+      "createdDate": "2025-09-07"
+    },
+    {
+      "fileName": "04_08_2025 - 10_08_2025.html",
+      "title": "04_08_2025 - 10_08_2025.html",
+      "url": "resources/work_logs/04_08_2025 - 10_08_2025.html",
+      "createdDate": "2025-08-04"
+    },
+    {
+      "fileName": "27_07_2025 - 03_08_2025.html",
+      "title": "27_07_2025 - 03_08_2025.html",
+      "url": "resources/work_logs/27_07_2025 - 03_08_2025.html",
+      "createdDate": "2025-07-27"
+    },
+    {
+      "fileName": "20_07_2025 - 26_07_2025.html",
+      "title": "20_07_2025 - 26_07_2025.html",
+      "url": "resources/work_logs/20_07_2025 - 26_07_2025.html",
+      "createdDate": "2025-07-20"
+    },
+    {
+      "fileName": "29_06_2025 - 05_07_2025.html",
+      "title": "29_06_2025 - 05_07_2025.html",
+      "url": "resources/work_logs/29_06_2025 - 05_07_2025.html",
+      "createdDate": "2025-06-29"
+    },
+    {
+      "fileName": "15_06_2025 - 21_06_2025.html",
+      "title": "15_06_2025 - 21_06_2025.html",
+      "url": "resources/work_logs/15_06_2025 - 21_06_2025.html",
+      "createdDate": "2025-06-15"
+    },
+    {
+      "fileName": "01_06_2025 - 07_06_2025.html",
+      "title": "01_06_2025 - 07_06_2025.html",
+      "url": "resources/work_logs/01_06_2025 - 07_06_2025.html",
+      "createdDate": "2025-06-01"
+    },
+    {
+      "fileName": "11_05_2025 - 17_05_2025.html",
+      "title": "11_05_2025 - 17_05_2025.html",
+      "url": "resources/work_logs/11_05_2025 - 17_05_2025.html",
+      "createdDate": "2025-05-11"
+    },
+    {
+      "fileName": "04_05_2025 - 10_05_2025.html",
+      "title": "04_05_2025 - 10_05_2025.html",
+      "url": "resources/work_logs/04_05_2025 - 10_05_2025.html",
+      "createdDate": "2025-05-04"
+    },
+    {
+      "fileName": "27_04_2025 - 03_05_2025.html",
+      "title": "27_04_2025 - 03_05_2025.html",
+      "url": "resources/work_logs/27_04_2025 - 03_05_2025.html",
+      "createdDate": "2025-04-27"
+    },
+    {
+      "fileName": "20_04_2025 - 26_04_2025.html",
+      "title": "20_04_2025 - 26_04_2025.html",
+      "url": "resources/work_logs/20_04_2025 - 26_04_2025.html",
+      "createdDate": "2025-04-20"
+    },
+    {
+      "fileName": "13_04_2025 - 19_04_2025.html",
+      "title": "13_04_2025 - 19_04_2025.html",
+      "url": "resources/work_logs/13_04_2025 - 19_04_2025.html",
+      "createdDate": "2025-04-13"
+    },
+    {
+      "fileName": "30_03_2025 - 05_04_2025.html",
+      "title": "30_03_2025 - 05_04_2025.html",
+      "url": "resources/work_logs/30_03_2025 - 05_04_2025.html",
+      "createdDate": "2025-03-30"
+    },
+    {
+      "fileName": "23_03_2025 - 29_03_2025.html",
+      "title": "23_03_2025 - 29_03_2025.html",
+      "url": "resources/work_logs/23_03_2025 - 29_03_2025.html",
+      "createdDate": "2025-03-23"
+    },
+    {
+      "fileName": "16_03_2025 - 22_03_2025.html",
+      "title": "16_03_2025 - 22_03_2025.html",
+      "url": "resources/work_logs/16_03_2025 - 22_03_2025.html",
+      "createdDate": "2025-03-16"
+    },
+    {
+      "fileName": "09_03_2025 - 15_03_2025.html",
+      "title": "09_03_2025 - 15_03_2025.html",
+      "url": "resources/work_logs/09_03_2025 - 15_03_2025.html",
+      "createdDate": "2025-03-09"
+    },
+    {
+      "fileName": "02_03_2025 - 08_03_2025.html",
+      "title": "02_03_2025 - 08_03_2025.html",
+      "url": "resources/work_logs/02_03_2025 - 08_03_2025.html",
+      "createdDate": "2025-03-02"
+    },
+    {
+      "fileName": "23_02_2025 - 01_03_2025.html",
+      "title": "23_02_2025 - 01_03_2025.html",
+      "url": "resources/work_logs/23_02_2025 - 01_03_2025.html",
+      "createdDate": "2025-02-23"
+    },
+    {
+      "fileName": "16_02_2025 - 22_02_2025.html",
+      "title": "16_02_2025 - 22_02_2025.html",
+      "url": "resources/work_logs/16_02_2025 - 22_02_2025.html",
+      "createdDate": "2025-02-16"
+    },
+    {
+      "fileName": "09_02_2025 - 15_02_2025.html",
+      "title": "09_02_2025 - 15_02_2025.html",
+      "url": "resources/work_logs/09_02_2025 - 15_02_2025.html",
+      "createdDate": "2025-02-09"
+    },
+    {
+      "fileName": "02_02_2025 - 08_02_2025.html",
+      "title": "02_02_2025 - 08_02_2025.html",
+      "url": "resources/work_logs/02_02_2025 - 08_02_2025.html",
+      "createdDate": "2025-02-02"
+    },
+    {
+      "fileName": "05_01_2025 - 11_01_2025.html",
+      "title": "05_01_2025 - 11_01_2025.html",
+      "url": "resources/work_logs/05_01_2025 - 11_01_2025.html",
+      "createdDate": "2025-01-05"
+    },
+    {
+      "fileName": "29_12_2024 - 04_01_2025.html",
+      "title": "29_12_2024 - 04_01_2025.html",
+      "url": "resources/work_logs/29_12_2024 - 04_01_2025.html",
+      "createdDate": "2024-12-29"
+    },
+    {
+      "fileName": "15_12_2024 - 21_12_2024.html",
+      "title": "15_12_2024 - 21_12_2024.html",
+      "url": "resources/work_logs/15_12_2024 - 21_12_2024.html",
+      "createdDate": "2024-12-15"
+    },
+    {
+      "fileName": "08_12_2024 - 14_12_2024.html",
+      "title": "08_12_2024 - 14_12_2024.html",
+      "url": "resources/work_logs/08_12_2024 - 14_12_2024.html",
+      "createdDate": "2024-12-08"
+    },
+    {
+      "fileName": "17_11_2024 - 23_11_2024.html",
+      "title": "17_11_2024 - 23_11_2024.html",
+      "url": "resources/work_logs/17_11_2024 - 23_11_2024.html",
+      "createdDate": "2024-11-17"
+    },
+    {
+      "fileName": "10_11_2024 - 16_11_2024.html",
+      "title": "10_11_2024 - 16_11_2024.html",
+      "url": "resources/work_logs/10_11_2024 - 16_11_2024.html",
+      "createdDate": "2024-11-10"
+    },
+    {
+      "fileName": "03_11_2024 - 09_11_2024.html",
+      "title": "03_11_2024 - 09_11_2024.html",
+      "url": "resources/work_logs/03_11_2024 - 09_11_2024.html",
+      "createdDate": "2024-11-03"
+    },
+    {
+      "fileName": "27_10_2024 - 02_11_2024.html",
+      "title": "27_10_2024 - 02_11_2024.html",
+      "url": "resources/work_logs/27_10_2024 - 02_11_2024.html",
+      "createdDate": "2024-10-27"
+    },
+    {
+      "fileName": "20_10_2024 - 26_10_2024.html",
+      "title": "20_10_2024 - 26_10_2024.html",
+      "url": "resources/work_logs/20_10_2024 - 26_10_2024.html",
+      "createdDate": "2024-10-20"
+    },
+    {
+      "fileName": "13_10_2024 - 19_10_2024.html",
+      "title": "13_10_2024 - 19_10_2024.html",
+      "url": "resources/work_logs/13_10_2024 - 19_10_2024.html",
+      "createdDate": "2024-10-13"
+    },
+    {
+      "fileName": "29_09_2024 - 04_10_2024.html",
+      "title": "29_09_2024 - 04_10_2024.html",
+      "url": "resources/work_logs/29_09_2024 - 04_10_2024.html",
+      "createdDate": "2024-09-29"
+    },
+    {
+      "fileName": "22_09_2024 - 28_09_2024.html",
+      "title": "22_09_2024 - 28_09_2024.html",
+      "url": "resources/work_logs/22_09_2024 - 28_09_2024.html",
+      "createdDate": "2024-09-22"
+    },
+    {
+      "fileName": "15_09_2024 - 21_09_2024.html",
+      "title": "15_09_2024 - 21_09_2024.html",
+      "url": "resources/work_logs/15_09_2024 - 21_09_2024.html",
+      "createdDate": "2024-09-15"
+    },
+    {
+      "fileName": "08_09_2024 - 14_09_2024.html",
+      "title": "08_09_2024 - 14_09_2024.html",
+      "url": "resources/work_logs/08_09_2024 - 14_09_2024.html",
+      "createdDate": "2024-09-08"
+    },
+    {
+      "fileName": "01_09_2024 - 07_09_2024.html",
+      "title": "01_09_2024 - 07_09_2024.html",
+      "url": "resources/work_logs/01_09_2024 - 07_09_2024.html",
+      "createdDate": "2024-09-01"
+    },
+    {
+      "fileName": "25_08_2024 - 31_08_2024.html",
+      "title": "25_08_2024 - 31_08_2024.html",
+      "url": "resources/work_logs/25_08_2024 - 31_08_2024.html",
+      "createdDate": "2024-08-25"
+    },
+    {
+      "fileName": "18_08_2024 - 24_08_2024.html",
+      "title": "18_08_2024 - 24_08_2024.html",
+      "url": "resources/work_logs/18_08_2024 - 24_08_2024.html",
+      "createdDate": "2024-08-18"
+    },
+    {
+      "fileName": "11_08_2024 - 17_08_2024.html",
+      "title": "11_08_2024 - 17_08_2024.html",
+      "url": "resources/work_logs/11_08_2024 - 17_08_2024.html",
+      "createdDate": "2024-08-11"
+    },
+    {
+      "fileName": "04_08_2024 - 10_08_2024.html",
+      "title": "04_08_2024 - 10_08_2024.html",
+      "url": "resources/work_logs/04_08_2024 - 10_08_2024.html",
+      "createdDate": "2024-08-04"
+    },
+    {
+      "fileName": "23_06_2024 - 29_06_2024.html",
+      "title": "23_06_2024 - 29_06_2024.html",
+      "url": "resources/work_logs/23_06_2024 - 29_06_2024.html",
+      "createdDate": "2024-06-23"
+    },
+    {
+      "fileName": "16_06_2024 - 22_06_2024.html",
+      "title": "16_06_2024 - 22_06_2024.html",
+      "url": "resources/work_logs/16_06_2024 - 22_06_2024.html",
+      "createdDate": "2024-06-16"
+    },
+    {
+      "fileName": "09_06_2024 - 15_06_2024.html",
+      "title": "09_06_2024 - 15_06_2024.html",
+      "url": "resources/work_logs/09_06_2024 - 15_06_2024.html",
+      "createdDate": "2024-06-09"
+    },
+    {
+      "fileName": "02_06_2024 - 08_06_2024.html",
+      "title": "02_06_2024 - 08_06_2024.html",
+      "url": "resources/work_logs/02_06_2024 - 08_06_2024.html",
+      "createdDate": "2024-06-02"
+    },
+    {
+      "fileName": "19_05_2024 - 25_05_2024.html",
+      "title": "19_05_2024 - 25_05_2024.html",
+      "url": "resources/work_logs/19_05_2024 - 25_05_2024.html",
+      "createdDate": "2024-05-19"
+    },
+    {
+      "fileName": "12_05_2024 - 18_05_2024.html",
+      "title": "12_05_2024 - 18_05_2024.html",
+      "url": "resources/work_logs/12_05_2024 - 18_05_2024.html",
+      "createdDate": "2024-05-12"
+    },
+    {
+      "fileName": "05_05_2024 - 11_05_2024.html",
+      "title": "05_05_2024 - 11_05_2024.html",
+      "url": "resources/work_logs/05_05_2024 - 11_05_2024.html",
+      "createdDate": "2024-05-05"
+    },
+    {
+      "fileName": "28_04_2024 - 04_05_2024.html",
+      "title": "28_04_2024 - 04_05_2024.html",
+      "url": "resources/work_logs/28_04_2024 - 04_05_2024.html",
+      "createdDate": "2024-04-28"
+    },
+    {
+      "fileName": "21_04_2024 - 27_04_2024.html",
+      "title": "21_04_2024 - 27_04_2024.html",
+      "url": "resources/work_logs/21_04_2024 - 27_04_2024.html",
+      "createdDate": "2024-04-21"
+    },
+    {
+      "fileName": "14_04_2024 - 20_04_2024.html",
+      "title": "14_04_2024 - 20_04_2024.html",
+      "url": "resources/work_logs/14_04_2024 - 20_04_2024.html",
+      "createdDate": "2024-04-14"
+    },
+    {
+      "fileName": "07_04_2024 - 13_04_2024.html",
+      "title": "07_04_2024 - 13_04_2024.html",
+      "url": "resources/work_logs/07_04_2024 - 13_04_2024.html",
+      "createdDate": "2024-04-07"
+    },
+    {
+      "fileName": "31_03_2024 - 06_03_2024.html",
+      "title": "31_03_2024 - 06_03_2024.html",
+      "url": "resources/work_logs/31_03_2024 - 06_03_2024.html",
+      "createdDate": "2024-03-31"
+    },
+    {
+      "fileName": "24_03_2024 -30_03_2024.html",
+      "title": "24_03_2024 -30_03_2024.html",
+      "url": "resources/work_logs/24_03_2024 -30_03_2024.html",
+      "createdDate": "2024-03-24"
+    },
+    {
+      "fileName": "17_03_2024 - 23_03_2024.html",
+      "title": "17_03_2024 - 23_03_2024.html",
+      "url": "resources/work_logs/17_03_2024 - 23_03_2024.html",
+      "createdDate": "2024-03-17"
+    },
+    {
+      "fileName": "10_03_2024 - 16_03_2024.html",
+      "title": "10_03_2024 - 16_03_2024.html",
+      "url": "resources/work_logs/10_03_2024 - 16_03_2024.html",
+      "createdDate": "2024-03-10"
+    },
+    {
+      "fileName": "03_03_2024 - 09_03_2024.html",
+      "title": "03_03_2024 - 09_03_2024.html",
+      "url": "resources/work_logs/03_03_2024 - 09_03_2024.html",
+      "createdDate": "2024-03-03"
+    },
+    {
+      "fileName": "25_02_2024 - 02_03_2024.html",
+      "title": "25_02_2024 - 02_03_2024.html",
+      "url": "resources/work_logs/25_02_2024 - 02_03_2024.html",
+      "createdDate": "2024-02-25"
+    },
+    {
+      "fileName": "18_02_2024 - 24_02_2024.html",
+      "title": "18_02_2024 - 24_02_2024.html",
+      "url": "resources/work_logs/18_02_2024 - 24_02_2024.html",
+      "createdDate": "2024-02-18"
+    },
+    {
+      "fileName": "11_02_2024 - 17_02_2024.html",
+      "title": "11_02_2024 - 17_02_2024.html",
+      "url": "resources/work_logs/11_02_2024 - 17_02_2024.html",
+      "createdDate": "2024-02-11"
+    },
+    {
+      "fileName": "04_02_2024 - 10_02_2024.html",
+      "title": "04_02_2024 - 10_02_2024.html",
+      "url": "resources/work_logs/04_02_2024 - 10_02_2024.html",
+      "createdDate": "2024-02-04"
+    },
+    {
+      "fileName": "28_01_2024-03_02_2024.html",
+      "title": "28_01_2024-03_02_2024.html",
+      "url": "resources/work_logs/28_01_2024-03_02_2024.html",
+      "createdDate": "2024-01-28"
+    },
+    {
+      "fileName": "21_01_2024 - 27_01_2024.html",
+      "title": "21_01_2024 - 27_01_2024.html",
+      "url": "resources/work_logs/21_01_2024 - 27_01_2024.html",
+      "createdDate": "2024-01-21"
+    },
+    {
+      "fileName": "14_01_2024 - 20_01_2024.html",
+      "title": "14_01_2024 - 20_01_2024.html",
+      "url": "resources/work_logs/14_01_2024 - 20_01_2024.html",
+      "createdDate": "2024-01-14"
+    },
+    {
+      "fileName": "07_01_2024 - 13_01_2024.html",
+      "title": "07_01_2024 - 13_01_2024.html",
+      "url": "resources/work_logs/07_01_2024 - 13_01_2024.html",
+      "createdDate": "2024-01-07"
+    }
+  ],
+  "presentations": [
+    {
+      "fileName": "DAQ Presentation Collaboration Meeting October 2025_2025-10-07_07-01-21.pdf",
+      "title": "DAQ Presentation Collaboration Meeting October 2025",
+      "url": "resources/presentations/DAQ Presentation Collaboration Meeting October 2025_2025-10-07_07-01-21.pdf",
+      "slides": 20,
+      "createdDate": "2025-10-07"
+    },
+    {
+      "fileName": "DAQ Progress Report 09_10_2025_2025-09-11_01-25-10.pdf",
+      "title": "DAQ Progress Report 09_10_2025",
+      "url": "resources/presentations/DAQ Progress Report 09_10_2025_2025-09-11_01-25-10.pdf",
+      "slides": 4,
+      "createdDate": "2025-09-11"
+    },
+    {
+      "fileName": "Simulation Workshop July 2025 Summary_2025-07-11_04-11-02.pdf",
+      "title": "Simulation Workshop July 2025 Summary",
+      "url": "resources/presentations/Simulation Workshop July 2025 Summary_2025-07-11_04-11-02.pdf",
+      "slides": 12,
+      "createdDate": "2025-07-11"
+    },
+    {
+      "fileName": "UKY Group Report 6_17_2025_2025-06-17_18-41-07.pdf",
+      "title": "UKY Group Report 6_17_2025",
+      "url": "resources/presentations/UKY Group Report 6_17_2025_2025-06-17_18-41-07.pdf",
+      "slides": 3,
+      "createdDate": "2025-06-17"
+    },
+    {
+      "fileName": "DAQ Progress Report 06_10_2025_2025-06-09_17-04-09.pdf",
+      "title": "DAQ Progress Report 06_10_2025",
+      "url": "resources/presentations/DAQ Progress Report 06_10_2025_2025-06-09_17-04-09.pdf",
+      "slides": 7,
+      "createdDate": "2025-06-09"
+    },
+    {
+      "fileName": "UKY Group Report 5_22_2025_2025-05-19_01-59-54.pdf",
+      "title": "UKY Group Report 5_22_2025",
+      "url": "resources/presentations/UKY Group Report 5_22_2025_2025-05-19_01-59-54.pdf",
+      "slides": 6,
+      "createdDate": "2025-05-19"
+    },
+    {
+      "fileName": "Simulation Progress Report 5_14_2025_2025-05-14_21-25-54.pdf",
+      "title": "Simulation Progress Report 5_14_2025",
+      "url": "resources/presentations/Simulation Progress Report 5_14_2025_2025-05-14_21-25-54.pdf",
+      "slides": 11,
+      "createdDate": "2025-05-14"
+    },
+    {
+      "fileName": "Simulation Progress Report 4_23_2025_2025-04-23_21-34-41.pdf",
+      "title": "Simulation Progress Report 4_23_2025",
+      "url": "resources/presentations/Simulation Progress Report 4_23_2025_2025-04-23_21-34-41.pdf",
+      "slides": 11,
+      "createdDate": "2025-04-23"
+    },
+    {
+      "fileName": "Simulation Progress Report 4_9_2025_2025-04-07_06-20-21.pdf",
+      "title": "Simulation Progress Report 4_9_2025",
+      "url": "resources/presentations/Simulation Progress Report 4_9_2025_2025-04-07_06-20-21.pdf",
+      "slides": 13,
+      "createdDate": "2025-04-07"
+    },
+    {
+      "fileName": "DAQ Progress Report 04_01_2025_2025-04-01_05-14-40.pdf",
+      "title": "DAQ Progress Report 04_01_2025",
+      "url": "resources/presentations/DAQ Progress Report 04_01_2025_2025-04-01_05-14-40.pdf",
+      "slides": 5,
+      "createdDate": "2025-04-01"
+    },
+    {
+      "fileName": "Simulation Progress Report 2_12_2025_2025-02-12_18-41-55.pdf",
+      "title": "Simulation Progress Report 2_12_2025",
+      "url": "resources/presentations/Simulation Progress Report 2_12_2025_2025-02-12_18-41-55.pdf",
+      "slides": 7,
+      "createdDate": "2025-02-12"
+    },
+    {
+      "fileName": "DAQ Presentation Collaboration Meeting January 2025_2024-12-25_10-19-40.pdf",
+      "title": "DAQ Presentation Collaboration Meeting January 2025",
+      "url": "resources/presentations/DAQ Presentation Collaboration Meeting January 2025_2024-12-25_10-19-40.pdf",
+      "slides": 24,
+      "createdDate": "2024-12-25"
+    },
+    {
+      "fileName": "DAQ Progress Report 11_19_2024_2024-11-18_16-45-49.pdf",
+      "title": "DAQ Progress Report 11_19_2024",
+      "url": "resources/presentations/DAQ Progress Report 11_19_2024_2024-11-18_16-45-49.pdf",
+      "slides": 2,
+      "createdDate": "2024-11-18"
+    },
+    {
+      "fileName": "Postqual GSS_2024-10-23_16-59-35.pdf",
+      "title": "Postqual GSS",
+      "url": "resources/presentations/Postqual GSS_2024-10-23_16-59-35.pdf",
+      "slides": 110,
+      "createdDate": "2024-10-23"
+    },
+    {
+      "fileName": "Annual postqualifiying update_2024-10-14_13-27-25.pdf",
+      "title": "Annual postqualifiying update",
+      "url": "resources/presentations/Annual postqualifiying update_2024-10-14_13-27-25.pdf",
+      "slides": 111,
+      "createdDate": "2024-10-14"
+    },
+    {
+      "fileName": "DAQ Progress Report 09_10_2024_2024-09-10_06-08-39.pdf",
+      "title": "DAQ Progress Report 09_10_2024",
+      "url": "resources/presentations/DAQ Progress Report 09_10_2024_2024-09-10_06-08-39.pdf",
+      "slides": 3,
+      "createdDate": "2024-09-10"
+    },
+    {
+      "fileName": "PIONEER DAQ Collaboration Meeting June 2024_2024-06-10_01-27-29.pdf",
+      "title": "PIONEER DAQ Collaboration Meeting June 2024",
+      "url": "resources/presentations/PIONEER DAQ Collaboration Meeting June 2024_2024-06-10_01-27-29.pdf",
+      "slides": 51,
+      "createdDate": "2024-06-10"
+    },
+    {
+      "fileName": "DAQ Introduciton Collaboration Meeting June 2024_2024-05-28_21-22-49.pdf",
+      "title": "DAQ Introduciton Collaboration Meeting June 2024",
+      "url": "resources/presentations/DAQ Introduciton Collaboration Meeting June 2024_2024-05-28_21-22-49.pdf",
+      "slides": 43,
+      "createdDate": "2024-05-28"
+    },
+    {
+      "fileName": "DAQ Progress Report 05_21_2024_2024-05-21_04-35-34.pdf",
+      "title": "DAQ Progress Report 05_21_2024",
+      "url": "resources/presentations/DAQ Progress Report 05_21_2024_2024-05-21_04-35-34.pdf",
+      "slides": 3,
+      "createdDate": "2024-05-21"
+    },
+    {
+      "fileName": "DAQ Progress Report 05_07_2024_2024-04-07_19-33-50.pdf",
+      "title": "DAQ Progress Report 05_07_2024",
+      "url": "resources/presentations/DAQ Progress Report 05_07_2024_2024-04-07_19-33-50.pdf",
+      "slides": 3,
+      "createdDate": "2024-04-07"
+    },
+    {
+      "fileName": "DAQ Progress Report 03_12_2024_2024-03-12_01-15-02.pdf",
+      "title": "DAQ Progress Report 03_12_2024",
+      "url": "resources/presentations/DAQ Progress Report 03_12_2024_2024-03-12_01-15-02.pdf",
+      "slides": 4,
+      "createdDate": "2024-03-12"
+    },
+    {
+      "fileName": "DAQ Presentation Collaboration Meeting 2023_2023-10-15_20-04-12.pdf",
+      "title": "DAQ Presentation Collaboration Meeting 2023",
+      "url": "resources/presentations/DAQ Presentation Collaboration Meeting 2023_2023-10-15_20-04-12.pdf",
+      "slides": 9,
+      "createdDate": "2023-10-15"
+    },
+    {
+      "fileName": "DAQ Progress Report 10_10_2023_2023-10-10_20-02-15.pdf",
+      "title": "DAQ Progress Report 10_10_2023",
+      "url": "resources/presentations/DAQ Progress Report 10_10_2023_2023-10-10_20-02-15.pdf",
+      "slides": 2,
+      "createdDate": "2023-10-10"
+    },
+    {
+      "fileName": "DAQ Progress Report 10_03_2023_2023-10-03_20-02-23.pdf",
+      "title": "DAQ Progress Report 10_03_2023",
+      "url": "resources/presentations/DAQ Progress Report 10_03_2023_2023-10-03_20-02-23.pdf",
+      "slides": 2,
+      "createdDate": "2023-10-03"
+    },
+    {
+      "fileName": "DAQ Progress Report 09_26_2023_2023-09-26_19-59-55.pdf",
+      "title": "DAQ Progress Report 09_26_2023",
+      "url": "resources/presentations/DAQ Progress Report 09_26_2023_2023-09-26_19-59-55.pdf",
+      "slides": 2,
+      "createdDate": "2023-09-26"
+    },
+    {
+      "fileName": "DAQ Progress Report 09_19_2023_2023-09-19_20-11-24.pdf",
+      "title": "DAQ Progress Report 09_19_2023",
+      "url": "resources/presentations/DAQ Progress Report 09_19_2023_2023-09-19_20-11-24.pdf",
+      "slides": 2,
+      "createdDate": "2023-09-19"
+    },
+    {
+      "fileName": "DAQ Progress Report 09_05_2023_2023-09-05_16-46-59.pdf",
+      "title": "DAQ Progress Report 09_05_2023",
+      "url": "resources/presentations/DAQ Progress Report 09_05_2023_2023-09-05_16-46-59.pdf",
+      "slides": 2,
+      "createdDate": "2023-09-05"
+    },
+    {
+      "fileName": "DAQ Progress Report 08_22_2023_2023-08-22_20-05-10.pdf",
+      "title": "DAQ Progress Report 08_22_2023",
+      "url": "resources/presentations/DAQ Progress Report 08_22_2023_2023-08-22_20-05-10.pdf",
+      "slides": 2,
+      "createdDate": "2023-08-22"
+    },
+    {
+      "fileName": "DAQ Progress Report 08_15_2023_2023-08-15_15-53-50.pdf",
+      "title": "DAQ Progress Report 08_15_2023",
+      "url": "resources/presentations/DAQ Progress Report 08_15_2023_2023-08-15_15-53-50.pdf",
+      "slides": 3,
+      "createdDate": "2023-08-15"
+    },
+    {
+      "fileName": "DAQ Progress Report 07_11_2023_2023-07-11_16-57-35.pdf",
+      "title": "DAQ Progress Report 07_11_2023",
+      "url": "resources/presentations/DAQ Progress Report 07_11_2023_2023-07-11_16-57-35.pdf",
+      "slides": 2,
+      "createdDate": "2023-07-11"
+    },
+    {
+      "fileName": "OralQualifyingExam_2023-06-29_21-46-02.pdf",
+      "title": "OralQualifyingExam",
+      "url": "resources/presentations/OralQualifyingExam_2023-06-29_21-46-02.pdf",
+      "slides": 66,
+      "createdDate": "2023-06-29"
+    }
+  ]
+}

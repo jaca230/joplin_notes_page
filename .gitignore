@@ -1,7 +1,18 @@
-# Ignore the credentials folder
-credentials/
+# Ignore local secrets/tokens anywhere in the repo
+*.env
+*.env.*
 credentials.json
 token.json
+*.token
+*.secret
+scripts/download_presentations/credentials.json
+scripts/download_presentations/token.json
+
+# Ignore Node build artifacts
+node_modules/
+dist/
+dist-ssr/
+*.local
 
 # Ignore Python bytecode files
 __pycache__/
