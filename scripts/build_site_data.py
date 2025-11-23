@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Compile Work Log and presentation metadata into JSON for the React web app."""
 
 import json

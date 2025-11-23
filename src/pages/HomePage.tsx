@@ -1,14 +1,8 @@
 import { Link } from "react-router-dom";
 import SectionCard from "../components/SectionCard";
 import type { PresentationEntry, WorkLogEntry } from "../types/content";
-import {
-  formatTimestamp,
-  getMostRecentEntries,
-  getLatestPresentation,
-  getLatestWorkLog,
-} from "../utils/dataHelpers";
+import { getMostRecentEntries, getLatestPresentation, getLatestWorkLog } from "../utils/dataHelpers";
 interface HomePageProps {
-  generatedAt: string | null | undefined;
   workLogs: WorkLogEntry[];
   presentations: PresentationEntry[];
 }
@@ -20,7 +14,7 @@ const StatCard = ({ label, value }: { label: string; value: string | number }) =
   </div>
 );
 
-const HomePage = ({ generatedAt, workLogs, presentations }: HomePageProps) => {
+const HomePage = ({ workLogs, presentations }: HomePageProps) => {
   const recentLogs = getMostRecentEntries(workLogs, 4);
   const recentDecks = getMostRecentEntries(presentations, 4);
   const latestLog = getLatestWorkLog(workLogs);

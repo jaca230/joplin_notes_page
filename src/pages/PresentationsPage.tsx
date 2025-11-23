@@ -1,10 +1,13 @@
 import { useMemo, useState } from "react";
+import type { ReactNode } from "react";
 import FilterBar from "../components/FilterBar";
 import SectionCard from "../components/SectionCard";
 import type { PresentationEntry } from "../types/content";
 import {
   buildCsv,
-  filterEntries,
+  buildSnippet,
+  matchesMetadata,
+  matchesTextContent,
   formatDate,
   formatSlides,
   pluralizeEntries,
@@ -16,23 +19,60 @@ type SortDirection = "asc" | "desc";
 
 interface PresentationsPageProps {
   presentations: PresentationEntry[];
+  searchTexts: Record<string, string>;
 }
+
+const escapeRegExp = (value: string) => value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
+const renderSnippet = (text: string | undefined, term: string, radius = 220) => {
+  const snippet = buildSnippet(text, term, radius);
+  if (!snippet || !term.trim()) {
+    return null;
+  }
+  const regex = new RegExp(escapeRegExp(term), "ig");
+  const nodes: ReactNode[] = [];
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
+  while ((match = regex.exec(snippet)) !== null) {
+    if (match.index > lastIndex) {
+      nodes.push(snippet.slice(lastIndex, match.index));
+    }
+    nodes.push(
+      <mark key={`deck-snippet-${match.index}`} className="bg-yellow-200 px-0.5">
+        {snippet.slice(match.index, regex.lastIndex)}
+      </mark>
+    );
+    lastIndex = regex.lastIndex;
+  }
+  if (lastIndex < snippet.length) {
+    nodes.push(snippet.slice(lastIndex));
+  }
+  return nodes;
+};
 
 const SortIndicator = ({ active, direction }: { active: boolean; direction: SortDirection }) => (
   <span className="text-xs text-slate-500">{active ? (direction === "asc" ? "▲" : "▼") : "↕"}</span>
 );
 
-const PresentationsPage = ({ presentations }: PresentationsPageProps) => {
+const PresentationsPage = ({ presentations, searchTexts }: PresentationsPageProps) => {
   const [filterValue, setFilterValue] = useState("");
   const [sortConfig, setSortConfig] = useState<{ column: SortColumn; direction: SortDirection }>({
     column: "createdDate",
     direction: "desc",
   });
 
-  const filtered = useMemo(
-    () => filterEntries(presentations, filterValue),
-    [presentations, filterValue]
-  );
+  const normalizedFilter = filterValue.trim().toLowerCase();
+
+  const filtered = useMemo(() => {
+    if (!normalizedFilter) {
+      return presentations;
+    }
+    return presentations.filter((deck) => {
+      const metadataMatch = matchesMetadata(deck, filterValue);
+      const textMatch = matchesTextContent(searchTexts[deck.fileName], filterValue);
+      return metadataMatch || textMatch;
+    });
+  }, [presentations, filterValue, normalizedFilter, searchTexts]);
 
   const sorted = useMemo(() => {
     const items = [...filtered];
@@ -91,7 +131,7 @@ const PresentationsPage = ({ presentations }: PresentationsPageProps) => {
     >
       <FilterBar
         value={filterValue}
-        placeholder="Filter by deck name or date"
+        placeholder="Search deck names, dates, and slide text"
         onChange={setFilterValue}
         onReset={() => setFilterValue("")}
         resultLabel={pluralizeEntries(sorted.length)}
@@ -149,6 +189,11 @@ const PresentationsPage = ({ presentations }: PresentationsPageProps) => {
                     <a href={deck.url} target="_blank" rel="noreferrer">
                       {deck.title}
                     </a>
+                    {normalizedFilter && (
+                      <p className="mt-1 text-xs italic text-slate-500">
+                        {renderSnippet(searchTexts[deck.fileName], filterValue, 220)}
+                      </p>
+                    )}
                   </td>
                   <td className="px-4 py-3 text-slate-600">{formatSlides(deck.slides)}</td>
                   <td className="px-4 py-3 text-slate-600">{formatDate(deck.createdDate)}</td>

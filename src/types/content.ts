@@ -16,3 +16,15 @@ export interface ContentPayload {
   workLogs: WorkLogEntry[];
   presentations: PresentationEntry[];
 }
+
+export type SearchEntryKind = "work-log" | "presentation";
+
+export interface SearchIndexEntry {
+  kind: SearchEntryKind;
+  title: string;
+  fileName: string;
+  url: string;
+  createdDate: Nullable<string>;
+  text: string;
+  textLength: number;
+}

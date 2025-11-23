@@ -4,7 +4,8 @@ import HomePage from "./pages/HomePage";
 import PresentationsPage from "./pages/PresentationsPage";
 import WorkLogsPage from "./pages/WorkLogsPage";
 import rawContent from "./data/content.json";
-import type { ContentPayload } from "./types/content";
+import rawSearchIndex from "./data/search-index.json";
+import type { ContentPayload, SearchIndexEntry } from "./types/content";
 
 const navLinks = [
   { to: "/", label: "Home" },
@@ -13,6 +14,18 @@ const navLinks = [
 ];
 
 const content = rawContent as ContentPayload;
+const searchIndex = rawSearchIndex as SearchIndexEntry[];
+
+const workLogSearchTexts: Record<string, string> = {};
+const presentationSearchTexts: Record<string, string> = {};
+
+searchIndex.forEach((entry) => {
+  if (entry.kind === "work-log") {
+    workLogSearchTexts[entry.fileName] = entry.text;
+  } else if (entry.kind === "presentation") {
+    presentationSearchTexts[entry.fileName] = entry.text;
+  }
+});
 
 const App = () => {
   const workLogs = content.workLogs ?? [];
@@ -30,14 +43,21 @@ const App = () => {
             path="/"
             element={
               <HomePage
-                generatedAt={content.generatedAt}
                 workLogs={workLogs}
                 presentations={presentations}
               />
             }
           />
-          <Route path="/work-logs" element={<WorkLogsPage workLogs={workLogs} />} />
-          <Route path="/presentations" element={<PresentationsPage presentations={presentations} />} />
+          <Route
+            path="/work-logs"
+            element={<WorkLogsPage workLogs={workLogs} searchTexts={workLogSearchTexts} />}
+          />
+          <Route
+            path="/presentations"
+            element={
+              <PresentationsPage presentations={presentations} searchTexts={presentationSearchTexts} />
+            }
+          />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>

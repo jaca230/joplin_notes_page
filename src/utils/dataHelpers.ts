@@ -30,6 +30,50 @@ export const formatTimestamp = (value: Nullable<string>) => {
 
 export const pluralizeEntries = (count: number) => `${count} ${count === 1 ? "entry" : "entries"}`;
 
+const normalizeTerm = (term: string) => term.trim().toLowerCase();
+
+export const matchesMetadata = (
+  item: { title: string; fileName: string; createdDate: Nullable<string> },
+  term: string
+) => {
+  const normalized = normalizeTerm(term);
+  if (!normalized) {
+    return true;
+  }
+  const haystack = `${item.title} ${item.fileName} ${item.createdDate ?? ""}`.toLowerCase();
+  return haystack.includes(normalized);
+};
+
+export const matchesTextContent = (text: string | undefined, term: string) => {
+  const normalized = normalizeTerm(term);
+  if (!normalized) {
+    return true;
+  }
+  return (text ?? "").toLowerCase().includes(normalized);
+};
+
+export const buildSnippet = (text: string | undefined, term: string, radius = 160) => {
+  if (!text || !term.trim()) {
+    return "";
+  }
+  const normalized = normalizeTerm(term);
+  const lowerText = text.toLowerCase();
+  const index = lowerText.indexOf(normalized);
+  if (index === -1) {
+    return text.slice(0, radius) + (text.length > radius ? "…" : "");
+  }
+  const start = Math.max(index - Math.floor(radius / 2), 0);
+  const end = Math.min(index + normalized.length + Math.floor(radius / 2), text.length);
+  let snippet = text.slice(start, end);
+  if (start > 0) {
+    snippet = "…" + snippet;
+  }
+  if (end < text.length) {
+    snippet = snippet + "…";
+  }
+  return snippet;
+};
+
 export const buildCsv = (headers: string[], rows: (string | number | undefined)[][]) => {
   const lines = [headers, ...rows]
     .map((cells) =>

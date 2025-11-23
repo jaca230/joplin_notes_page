@@ -1,10 +1,13 @@
 import { useMemo, useState } from "react";
+import type { ReactNode } from "react";
 import FilterBar from "../components/FilterBar";
 import SectionCard from "../components/SectionCard";
 import type { WorkLogEntry } from "../types/content";
 import {
   buildCsv,
-  filterEntries,
+  buildSnippet,
+  matchesMetadata,
+  matchesTextContent,
   formatDate,
   pluralizeEntries,
   triggerCsvDownload,
@@ -15,23 +18,60 @@ type SortDirection = "asc" | "desc";
 
 interface WorkLogsPageProps {
   workLogs: WorkLogEntry[];
+  searchTexts: Record<string, string>;
 }
+
+const escapeRegExp = (value: string) => value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
+const renderSnippet = (text: string | undefined, term: string) => {
+  const snippet = buildSnippet(text, term);
+  if (!snippet || !term.trim()) {
+    return null;
+  }
+  const regex = new RegExp(escapeRegExp(term), "ig");
+  const nodes: ReactNode[] = [];
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
+  while ((match = regex.exec(snippet)) !== null) {
+    if (match.index > lastIndex) {
+      nodes.push(snippet.slice(lastIndex, match.index));
+    }
+    nodes.push(
+      <mark key={`worklog-snippet-${match.index}`} className="bg-yellow-200 px-0.5">
+        {snippet.slice(match.index, regex.lastIndex)}
+      </mark>
+    );
+    lastIndex = regex.lastIndex;
+  }
+  if (lastIndex < snippet.length) {
+    nodes.push(snippet.slice(lastIndex));
+  }
+  return nodes;
+};
 
 const SortIndicator = ({ active, direction }: { active: boolean; direction: SortDirection }) => (
   <span className="text-xs text-slate-500">{active ? (direction === "asc" ? "▲" : "▼") : "↕"}</span>
 );
 
-const WorkLogsPage = ({ workLogs }: WorkLogsPageProps) => {
+const WorkLogsPage = ({ workLogs, searchTexts }: WorkLogsPageProps) => {
   const [filterValue, setFilterValue] = useState("");
   const [sortConfig, setSortConfig] = useState<{ column: SortColumn; direction: SortDirection }>({
     column: "createdDate",
     direction: "desc",
   });
 
-  const filtered = useMemo(
-    () => filterEntries(workLogs, filterValue),
-    [workLogs, filterValue]
-  );
+  const normalizedFilter = filterValue.trim().toLowerCase();
+
+  const filtered = useMemo(() => {
+    if (!normalizedFilter) {
+      return workLogs;
+    }
+    return workLogs.filter((log) => {
+      const metadataMatch = matchesMetadata(log, filterValue);
+      const textMatch = matchesTextContent(searchTexts[log.fileName], filterValue);
+      return metadataMatch || textMatch;
+    });
+  }, [workLogs, filterValue, normalizedFilter, searchTexts]);
 
   const sorted = useMemo(() => {
     const items = [...filtered];
@@ -86,7 +126,7 @@ const WorkLogsPage = ({ workLogs }: WorkLogsPageProps) => {
     >
       <FilterBar
         value={filterValue}
-        placeholder="Filter by title or date"
+        placeholder="Search titles, dates, and file contents"
         onChange={setFilterValue}
         onReset={() => setFilterValue("")}
         resultLabel={pluralizeEntries(sorted.length)}
@@ -134,6 +174,11 @@ const WorkLogsPage = ({ workLogs }: WorkLogsPageProps) => {
                     <a href={log.url} target="_blank" rel="noreferrer">
                       {log.title}
                     </a>
+                    {normalizedFilter && (
+                      <p className="mt-1 text-xs italic text-slate-500">
+                        {renderSnippet(searchTexts[log.fileName], filterValue)}
+                      </p>
+                    )}
                   </td>
                   <td className="px-4 py-3 text-slate-600">{formatDate(log.createdDate)}</td>
                 </tr>
