@@ -1,7 +1,12 @@
 import { Link } from "react-router-dom";
 import SectionCard from "../components/SectionCard";
 import type { PresentationEntry, WorkLogEntry } from "../types/content";
-import { getMostRecentEntries, getLatestPresentation, getLatestWorkLog } from "../utils/dataHelpers";
+import {
+  getMostRecentEntries,
+  getLatestPresentation,
+  getLatestWorkLog,
+  withBasePath,
+} from "../utils/dataHelpers";
 interface HomePageProps {
   workLogs: WorkLogEntry[];
   presentations: PresentationEntry[];
@@ -46,7 +51,12 @@ const HomePage = ({ workLogs, presentations }: HomePageProps) => {
             {recentLogs.map((log) => (
               <li key={log.fileName} className="flex items-center justify-between py-3 text-sm">
                 <div className="flex flex-col">
-                  <a className="font-medium text-brand-blue" href={log.url} target="_blank" rel="noreferrer">
+                  <a
+                    className="font-medium text-brand-blue"
+                    href={withBasePath(log.url)}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     {log.title}
                   </a>
                   <span className="text-slate-500">{log.createdDate ?? "Unknown"}</span>
@@ -77,7 +87,12 @@ const HomePage = ({ workLogs, presentations }: HomePageProps) => {
             {recentDecks.map((deck) => (
               <li key={deck.fileName} className="flex items-center justify-between py-3 text-sm">
                 <div className="flex flex-col">
-                  <a className="font-medium text-brand-blue" href={deck.url} target="_blank" rel="noreferrer">
+                  <a
+                    className="font-medium text-brand-blue"
+                    href={withBasePath(deck.url)}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     {deck.title}
                   </a>
                   <span className="text-slate-500">

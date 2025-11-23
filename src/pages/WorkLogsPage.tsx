@@ -11,6 +11,7 @@ import {
   formatDate,
   pluralizeEntries,
   triggerCsvDownload,
+  withBasePath,
 } from "../utils/dataHelpers";
 
 type SortColumn = "title" | "createdDate";
@@ -171,7 +172,7 @@ const WorkLogsPage = ({ workLogs, searchTexts }: WorkLogsPageProps) => {
               sorted.map((log) => (
                 <tr key={log.fileName} className="hover:bg-slate-50">
                   <td className="px-4 py-3 font-medium text-brand-blue">
-                    <a href={log.url} target="_blank" rel="noreferrer">
+                    <a href={withBasePath(log.url)} target="_blank" rel="noreferrer">
                       {log.title}
                     </a>
                     {normalizedFilter && (

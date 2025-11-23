@@ -1,5 +1,13 @@
 import type { Nullable, PresentationEntry, WorkLogEntry } from "../types/content";
 
+const ensureTrailingSlash = (value: string) => (value.endsWith("/") ? value : `${value}/`);
+
+export const withBasePath = (path: string) => {
+  const base = ensureTrailingSlash(import.meta.env.BASE_URL ?? "/");
+  const sanitized = path.replace(/^\/+/, "");
+  return `${base}${sanitized}`;
+};
+
 export const filterEntries = <T extends { title: string; fileName: string; createdDate: Nullable<string> }>(
   items: T[],
   term: string
