@@ -61,3 +61,4 @@ ENV/
 *.gz
 *.zip
 *.rar
+.local-node/
