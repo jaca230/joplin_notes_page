@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-11-23T21:26:01.995309Z",
+  "generatedAt": "2025-12-14T05:03:57.411420Z",
   "workLogs": [
     {
       "fileName": "09_11_2025 - 15_11_2025.html",
@@ -411,6 +411,27 @@
     }
   ],
   "presentations": [
+    {
+      "fileName": "Hyperparameters, Optuna, General ML notes_2025-12-12_19-41-04.pdf",
+      "title": "Hyperparameters, Optuna, General ML notes",
+      "url": "resources/presentations/Hyperparameters, Optuna, General ML notes_2025-12-12_19-41-04.pdf",
+      "slides": 33,
+      "createdDate": "2025-12-12"
+    },
+    {
+      "fileName": "UKY Group Report 12_10_2025_2025-12-10_14-26-15.pdf",
+      "title": "UKY Group Report 12_10_2025",
+      "url": "resources/presentations/UKY Group Report 12_10_2025_2025-12-10_14-26-15.pdf",
+      "slides": 12,
+      "createdDate": "2025-12-10"
+    },
+    {
+      "fileName": "Simulation Progress Report 11_26_2025_2025-11-26_22-27-08.pdf",
+      "title": "Simulation Progress Report 11_26_2025",
+      "url": "resources/presentations/Simulation Progress Report 11_26_2025_2025-11-26_22-27-08.pdf",
+      "slides": 6,
+      "createdDate": "2025-11-26"
+    },
     {
       "fileName": "DAQ Presentation Collaboration Meeting October 2025_2025-10-07_07-01-21.pdf",
       "title": "DAQ Presentation Collaboration Meeting October 2025",
