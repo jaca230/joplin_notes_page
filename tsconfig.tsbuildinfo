@@ -1,1 +1,0 @@
-{"root":["./src/App.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/FilterBar.tsx","./src/components/NavBar.tsx","./src/components/SectionCard.tsx","./src/pages/HomePage.tsx","./src/pages/PresentationsPage.tsx","./src/pages/WorkLogsPage.tsx","./src/types/content.ts","./src/utils/dataHelpers.ts"],"version":"5.9.3"}
