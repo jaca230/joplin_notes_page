@@ -62,3 +62,8 @@ ENV/
 *.zip
 *.rar
 .local-node/
+
+# Vite build caches
+.vite/
+node_modules/.vite/
+*.tsbuildinfo

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-14T05:03:57.411420Z",
+  "generatedAt": "2026-01-07T21:16:12.367338Z",
   "workLogs": [
     {
       "fileName": "09_11_2025 - 15_11_2025.html",
@@ -411,6 +411,41 @@
     }
   ],
   "presentations": [
+    {
+      "fileName": "Deadtime Estimate Updates for HDSoC and SAMPic as of 01_07_2026_2026-01-07_18-50-39.pdf",
+      "title": "Deadtime Estimate Updates for HDSoC and SAMPic as of 01_07_2026",
+      "url": "resources/presentations/Deadtime Estimate Updates for HDSoC and SAMPic as of 01_07_2026_2026-01-07_18-50-39.pdf",
+      "slides": 11,
+      "createdDate": "2026-01-07"
+    },
+    {
+      "fileName": "ATAR ML Based PIONEER Reconstruction as of 01_07_2026_2026-01-07_11-33-41.pdf",
+      "title": "ATAR ML Based PIONEER Reconstruction as of 01_07_2026",
+      "url": "resources/presentations/ATAR ML Based PIONEER Reconstruction as of 01_07_2026_2026-01-07_11-33-41.pdf",
+      "slides": 20,
+      "createdDate": "2026-01-07"
+    },
+    {
+      "fileName": "Making the ML Reconstruction Pipeline Scale_2026-01-04_15-34-36.pdf",
+      "title": "Making the ML Reconstruction Pipeline Scale",
+      "url": "resources/presentations/Making the ML Reconstruction Pipeline Scale_2026-01-04_15-34-36.pdf",
+      "slides": 29,
+      "createdDate": "2026-01-04"
+    },
+    {
+      "fileName": "DAQ Progress Report 12_17_2025_2025-12-16_18-48-34.pdf",
+      "title": "DAQ Progress Report 12_17_2025",
+      "url": "resources/presentations/DAQ Progress Report 12_17_2025_2025-12-16_18-48-34.pdf",
+      "slides": 15,
+      "createdDate": "2025-12-16"
+    },
+    {
+      "fileName": "Copy of Hyperparameters, Optuna, General ML notes_2025-12-14_04-45-50.pdf",
+      "title": "Copy of Hyperparameters, Optuna, General ML notes",
+      "url": "resources/presentations/Copy of Hyperparameters, Optuna, General ML notes_2025-12-14_04-45-50.pdf",
+      "slides": 33,
+      "createdDate": "2025-12-14"
+    },
     {
       "fileName": "Hyperparameters, Optuna, General ML notes_2025-12-12_19-41-04.pdf",
       "title": "Hyperparameters, Optuna, General ML notes",
