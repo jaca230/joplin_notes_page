@@ -1,6 +1,24 @@
 {
-  "generatedAt": "2026-01-07T21:16:12.367338Z",
+  "generatedAt": "2026-02-04T10:27:06.890579Z",
   "workLogs": [
+    {
+      "fileName": "01_11_2026 - 01_17_2026.html",
+      "title": "01_11_2026 - 01_17_2026.html",
+      "url": "resources/work_logs/01_11_2026 - 01_17_2026.html",
+      "createdDate": "2026-11-01"
+    },
+    {
+      "fileName": "28_12_2025 - 03_01_2026.html",
+      "title": "28_12_2025 - 03_01_2026.html",
+      "url": "resources/work_logs/28_12_2025 - 03_01_2026.html",
+      "createdDate": "2025-12-28"
+    },
+    {
+      "fileName": "14_12_2025 - 19_12_2025.html",
+      "title": "14_12_2025 - 19_12_2025.html",
+      "url": "resources/work_logs/14_12_2025 - 19_12_2025.html",
+      "createdDate": "2025-12-14"
+    },
     {
       "fileName": "09_11_2025 - 15_11_2025.html",
       "title": "09_11_2025 - 15_11_2025.html",
@@ -412,6 +430,27 @@
   ],
   "presentations": [
     {
+      "fileName": "UKY Group Report 02_04_2026_2026-02-04_05-26-37.pdf",
+      "title": "UKY Group Report 02_04_2026",
+      "url": "resources/presentations/UKY Group Report 02_04_2026_2026-02-04_05-26-37.pdf",
+      "slides": 11,
+      "createdDate": "2026-02-04"
+    },
+    {
+      "fileName": "PIONEER AI Reconstruction PGSC Talk_2026-01-20_18-12-33.pdf",
+      "title": "PIONEER AI Reconstruction PGSC Talk",
+      "url": "resources/presentations/PIONEER AI Reconstruction PGSC Talk_2026-01-20_18-12-33.pdf",
+      "slides": 133,
+      "createdDate": "2026-01-20"
+    },
+    {
+      "fileName": "DAQ Progress Report 01_11_2026_2026-01-12_00-51-47.pdf",
+      "title": "DAQ Progress Report 01_11_2026",
+      "url": "resources/presentations/DAQ Progress Report 01_11_2026_2026-01-12_00-51-47.pdf",
+      "slides": 8,
+      "createdDate": "2026-01-12"
+    },
+    {
       "fileName": "Deadtime Estimate Updates for HDSoC and SAMPic as of 01_07_2026_2026-01-07_18-50-39.pdf",
       "title": "Deadtime Estimate Updates for HDSoC and SAMPic as of 01_07_2026",
       "url": "resources/presentations/Deadtime Estimate Updates for HDSoC and SAMPic as of 01_07_2026_2026-01-07_18-50-39.pdf",
@@ -438,13 +477,6 @@
       "url": "resources/presentations/DAQ Progress Report 12_17_2025_2025-12-16_18-48-34.pdf",
       "slides": 15,
       "createdDate": "2025-12-16"
-    },
-    {
-      "fileName": "Copy of Hyperparameters, Optuna, General ML notes_2025-12-14_04-45-50.pdf",
-      "title": "Copy of Hyperparameters, Optuna, General ML notes",
-      "url": "resources/presentations/Copy of Hyperparameters, Optuna, General ML notes_2025-12-14_04-45-50.pdf",
-      "slides": 33,
-      "createdDate": "2025-12-14"
     },
     {
       "fileName": "Hyperparameters, Optuna, General ML notes_2025-12-12_19-41-04.pdf",
