@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-04T10:27:06.890579Z",
+  "generatedAt": "2026-02-17T06:16:14.125150Z",
   "workLogs": [
     {
       "fileName": "01_11_2026 - 01_17_2026.html",
@@ -429,6 +429,20 @@
     }
   ],
   "presentations": [
+    {
+      "fileName": "Annual postqualifiying update 2_2026-02-11_18-07-54.pdf",
+      "title": "Annual postqualifiying update 2",
+      "url": "resources/presentations/Annual postqualifiying update 2_2026-02-11_18-07-54.pdf",
+      "slides": 213,
+      "createdDate": "2026-02-11"
+    },
+    {
+      "fileName": "UKY Group Report 02_11_2026_2026-02-10_21-56-00.pdf",
+      "title": "UKY Group Report 02_11_2026",
+      "url": "resources/presentations/UKY Group Report 02_11_2026_2026-02-10_21-56-00.pdf",
+      "slides": 12,
+      "createdDate": "2026-02-10"
+    },
     {
       "fileName": "UKY Group Report 02_04_2026_2026-02-04_05-26-37.pdf",
       "title": "UKY Group Report 02_04_2026",

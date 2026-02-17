@@ -1,5 +1,6 @@
 import io
 import argparse
+import json
 from datetime import datetime
 from pathlib import Path
 
@@ -46,9 +47,18 @@ def download_file(file_id, destination_path: Path, service, mime_type, overwrite
     done = False
     target_name = destination_path.name
     print(f"Starting download: {target_name}")
-    while done is False:
-        status, done = downloader.next_chunk()
-        print(f"Download {int(status.progress() * 100)}% complete for {target_name}.")
+    try:
+        while done is False:
+            status, done = downloader.next_chunk()
+            print(f"Download {int(status.progress() * 100)}% complete for {target_name}.")
+    except HttpError as error:
+        if _is_export_size_limit_error(error):
+            print(
+                f"Skipping '{target_name}': Google Drive export size limit exceeded. "
+                "Please export/download this file manually."
+            )
+            return
+        raise
 
     # Save the file
     fh.seek(0)
@@ -56,6 +66,20 @@ def download_file(file_id, destination_path: Path, service, mime_type, overwrite
     with destination_path.open("wb") as f:
         f.write(fh.read())
     print(f"Downloaded: {destination_path}")
+
+
+def _is_export_size_limit_error(error: HttpError) -> bool:
+    """Return True when Drive cannot export because the generated file is too large."""
+    if getattr(error.resp, "status", None) != 403:
+        return False
+
+    try:
+        payload = json.loads(error.content.decode("utf-8"))
+    except (AttributeError, UnicodeDecodeError, json.JSONDecodeError):
+        return False
+
+    details = payload.get("error", {}).get("errors", [])
+    return any(detail.get("reason") == "exportSizeLimitExceeded" for detail in details)
 
 def list_files_in_folder(folder_id, service):
     """List all files in the specified folder, including created time."""
@@ -76,6 +100,10 @@ def download_presentations_in_folder(folder_id, service, overwrite):
     """Download all presentations in the specified folder recursively and flatten the results."""
     files = list_files_in_folder(folder_id, service)
     for file in files:
+        if file["name"].startswith("Copy of"):
+            print(f"Skipping duplicate copy by name: {file['name']} (ID: {file['id']})")
+            continue
+
         print(f"Processing file: {file['name']} (ID: {file['id']})")
         # Check if the file is a Google Slides presentation
         if file['mimeType'] == 'application/vnd.google-apps.presentation':

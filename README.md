@@ -29,9 +29,9 @@ Vite + React + TypeScript site that surfaces exported Joplin work logs and Googl
 ## Refresh the data (work logs + presentations)
 
 1. Export Joplin Work Logs into `public/resources/work_logs/` (their linked files stay in `public/resources/_resources/`).
-2. Configure Google API credentials in `scripts/download_presentations/credentials.json` + `token.json`, then run `python3 scripts/download_presentations/download_presentations.py` (add `--overwrite` to force refresh).
-3. Rebuild metadata: `python3 scripts/build_site_data.py` (updates `src/data/content.json`).
-4. Rebuild the search index: `python3 scripts/build_search_index.py` (updates `src/data/search-index.json`).
+2. Configure Google API credentials in `scripts/download_presentations/credentials.json` + `token.json`, then run `python scripts/download_presentations/download_presentations.py` (add `--overwrite` to force refresh).
+3. Rebuild metadata: `python scripts/build_site_data.py` (updates `src/data/content.json`).
+4. Rebuild the search index: `python scripts/build_search_index.py` (updates `src/data/search-index.json`).
 5. Commit `src/data/*.json` so the deployed site stays in sync.
 
 ## Run the app locally
