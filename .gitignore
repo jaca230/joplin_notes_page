@@ -67,3 +67,6 @@ ENV/
 .vite/
 node_modules/.vite/
 *.tsbuildinfo
+
+# Local working artifacts
+.artifacts/

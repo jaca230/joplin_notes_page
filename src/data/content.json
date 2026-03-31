@@ -1,11 +1,29 @@
 {
-  "generatedAt": "2026-02-17T15:34:11.415612Z",
+  "generatedAt": "2026-03-31T22:12:11.541473Z",
   "workLogs": [
     {
-      "fileName": "01_11_2026 - 01_17_2026.html",
-      "title": "01_11_2026 - 01_17_2026.html",
-      "url": "resources/work_logs/01_11_2026 - 01_17_2026.html",
-      "createdDate": "2026-11-01"
+      "fileName": "22_03_2026 - 28_03_2026.html",
+      "title": "22_03_2026 - 28_03_2026.html",
+      "url": "resources/work_logs/22_03_2026 - 28_03_2026.html",
+      "createdDate": "2026-03-22"
+    },
+    {
+      "fileName": "08_02_2026 - 13_02_2026.html",
+      "title": "08_02_2026 - 13_02_2026.html",
+      "url": "resources/work_logs/08_02_2026 - 13_02_2026.html",
+      "createdDate": "2026-02-08"
+    },
+    {
+      "fileName": "01_02_2026 - 07_02_2026.html",
+      "title": "01_02_2026 - 07_02_2026.html",
+      "url": "resources/work_logs/01_02_2026 - 07_02_2026.html",
+      "createdDate": "2026-02-01"
+    },
+    {
+      "fileName": "11_01_2026 - 17_01_2026.html",
+      "title": "11_01_2026 - 17_01_2026.html",
+      "url": "resources/work_logs/11_01_2026 - 17_01_2026.html",
+      "createdDate": "2026-01-11"
     },
     {
       "fileName": "28_12_2025 - 03_01_2026.html",
@@ -429,6 +447,27 @@
     }
   ],
   "presentations": [
+    {
+      "fileName": "DAQ Progress Report 03_17_2026_2026-03-17_13-12-22.pdf",
+      "title": "DAQ Progress Report 03_17_2026",
+      "url": "resources/presentations/DAQ Progress Report 03_17_2026_2026-03-17_13-12-22.pdf",
+      "slides": 5,
+      "createdDate": "2026-03-17"
+    },
+    {
+      "fileName": "Simulation Progress Report 03_06_2026_2026-03-05_01-16-05.pdf",
+      "title": "Simulation Progress Report 03_06_2026",
+      "url": "resources/presentations/Simulation Progress Report 03_06_2026_2026-03-05_01-16-05.pdf",
+      "slides": 32,
+      "createdDate": "2026-03-05"
+    },
+    {
+      "fileName": "Simulation Progress Report 02_20_2026_2026-02-19_16-39-08.pdf",
+      "title": "Simulation Progress Report 02_20_2026",
+      "url": "resources/presentations/Simulation Progress Report 02_20_2026_2026-02-19_16-39-08.pdf",
+      "slides": 5,
+      "createdDate": "2026-02-19"
+    },
     {
       "fileName": "Annual postqualifiying update 2_2026-02-11_18-07-54.pdf",
       "title": "Annual postqualifiying update 2",
