@@ -1,6 +1,24 @@
 {
-  "generatedAt": "2026-03-31T22:12:11.541473Z",
+  "generatedAt": "2026-05-13T16:24:43.181396Z",
   "workLogs": [
+    {
+      "fileName": "03_05_2026 - 09_05_2026.html",
+      "title": "03_05_2026 - 09_05_2026.html",
+      "url": "resources/work_logs/03_05_2026 - 09_05_2026.html",
+      "createdDate": "2026-05-03"
+    },
+    {
+      "fileName": "19_04_2026 - 25_04_2026.html",
+      "title": "19_04_2026 - 25_04_2026.html",
+      "url": "resources/work_logs/19_04_2026 - 25_04_2026.html",
+      "createdDate": "2026-04-19"
+    },
+    {
+      "fileName": "29_03_2026 - 04_04_2026.html",
+      "title": "29_03_2026 - 04_04_2026.html",
+      "url": "resources/work_logs/29_03_2026 - 04_04_2026.html",
+      "createdDate": "2026-03-29"
+    },
     {
       "fileName": "22_03_2026 - 28_03_2026.html",
       "title": "22_03_2026 - 28_03_2026.html",
@@ -447,6 +465,20 @@
     }
   ],
   "presentations": [
+    {
+      "fileName": "DAQ Progress Report 04_14_2026_2026-04-14_12-52-53.pdf",
+      "title": "DAQ Progress Report 04_14_2026",
+      "url": "resources/presentations/DAQ Progress Report 04_14_2026_2026-04-14_12-52-53.pdf",
+      "slides": 5,
+      "createdDate": "2026-04-14"
+    },
+    {
+      "fileName": "Simulation Progress Report 04_03_2026_2026-04-02_21-49-16.pdf",
+      "title": "Simulation Progress Report 04_03_2026",
+      "url": "resources/presentations/Simulation Progress Report 04_03_2026_2026-04-02_21-49-16.pdf",
+      "slides": 8,
+      "createdDate": "2026-04-02"
+    },
     {
       "fileName": "DAQ Progress Report 03_17_2026_2026-03-17_13-12-22.pdf",
       "title": "DAQ Progress Report 03_17_2026",
